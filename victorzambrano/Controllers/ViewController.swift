@@ -63,7 +63,9 @@ class ViewController: UIViewController {
     }
 	
 	func updateUIWithProjectData() {
+		
 		print("updateUIWithProjectData")
+		
 	}
 	
 }
