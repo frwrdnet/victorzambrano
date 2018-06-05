@@ -25,6 +25,7 @@ class ViewController: UIViewController {
 		// Dispose of any resources that can be recreated.
 	}
 
+	
     //MARK: - Networking
     /***************************************************************/
 
@@ -46,6 +47,7 @@ class ViewController: UIViewController {
             }
 
     }
+	
 
     //MARK: - JSON Parsing
     /***************************************************************/
@@ -61,6 +63,10 @@ class ViewController: UIViewController {
 
         updateUIWithProjectData()
     }
+	
+	
+	//MARK: - Update Projects
+	/***************************************************************/
 	
 	func updateUIWithProjectData() {
 		
