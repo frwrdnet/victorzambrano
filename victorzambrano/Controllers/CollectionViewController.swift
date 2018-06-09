@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  CollectionViewController.swift
 //  victorzambrano
 //
 //  Created by Victor Zambrano on 6/4/18.
@@ -11,7 +11,7 @@ import Alamofire
 import SwiftyJSON
 import RealmSwift
 
-class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
+class CollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
 	
 	let realm = try! Realm()
 	
@@ -28,50 +28,65 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
 		super.viewDidLoad()
 		// Do any additional setup after loading the view, typically from a nib.
 		
-		getProjectData(url: postURL, parameters: ["":""])
+		loadProjects()
+		
+		//getProjectData(url: postURL, parameters: ["":""])
+		
+		//loadProjects()
 	}
+
+	@IBOutlet weak var projectThumbImage: UIImageView!
+	@IBOutlet weak var projectThumbTitle: UILabel!
 	
-	override func numberOfSections(in collectionView: UICollectionView) -> Int {
-		return projects!.count
-	}
-	
-	//2
-	override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-		return projects!.count
-	}
-	
-	//3
 	override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+
+		print("collectionView - cellForItemAt")
+
 		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
 		cell.backgroundColor = UIColor.black
+		
+		let project = projectForIndexPath(indexPath)
+		
+		cell.projectThumbTitle.text = project.projectTitle
+		//cell.projectThumbImage.image = project.projectTitle
+
 		// Configure the cell
 		return cell
 	}
-	
-	//1
+
 	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-		//2
+
+		print("collectionView - cellForItemAt")
+
 		let paddingSpace = sectionInsets.left * (itemsPerRow + 1)
 		let availableWidth = view.frame.width - paddingSpace
 		let widthPerItem = availableWidth / itemsPerRow
-		
+
 		return CGSize(width: widthPerItem, height: widthPerItem)
 	}
-	
-	//3
+
 	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+
+		print("collectionView - insetForSectionAt")
+
 		return sectionInsets
+
 	}
-	
-	// 4
-	func collectionView(_ collectionView: UICollectionView,
-						layout collectionViewLayout: UICollectionViewLayout,
-						minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+
+	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+
+		print("collectionView - minimumLineSpacingForSectionAt")
+
 		return sectionInsets.left
+
 	}
 	
 	func loadProjects() {
+		
+		print("loadProjects")
+		
 		projects = realm.objects(Project.self)
+		
 	}
 
 	
@@ -79,6 +94,8 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
     /***************************************************************/
 
 	func getProjectData(url: String, parameters: [String : String]) {
+		
+		print("getProjectData...")
 
         Alamofire.request(url, method: .get, parameters: parameters)
             .responseJSON { response in
@@ -103,6 +120,8 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
 
     func updateProjectsData(json : JSON) {
 		
+		print("updateProjectsData...")
+		
 		if let temp1 = json[0]["date"].string {
 			
 			for proj in json {
@@ -111,24 +130,28 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
 				
 				if let temp2 = project["id"].int {
 					
-					// TODO: SAVE TO REALM DB
+					// newProject
+					
+					print("newProject = \(project)\n----")
+					
+					let newProject = Project()
+					newProject.projectID = project["id"].stringValue
+					newProject.projectSlug = project["slug"].stringValue
+					newProject.projectDate = project["date"].stringValue
+					newProject.projectSelfJsonLink = project["_links"]["href"].stringValue
+					newProject.projectURL = project["link"].stringValue
+					newProject.projectContent = project["content"]["rendered"].stringValue
+					newProject.projectTitle = project["title"]["rendered"].stringValue
+					newProject.projectExcerpt = project["excerpt"]["rendered"].stringValue
+					
+					// RETRIEVE PROJECT IMAGES FROM POST JSON
+					newProject.projectImages = updateImageData(json: project)
+					
+					// SAVE TO REALM DB
 					do {
 						try realm.write {
-							// newProject
-					
-							let newProject = Project()
-							newProject.projectID = project["id"].stringValue
-							newProject.projectSlug = project["slug"].stringValue
-							newProject.projectDate = project["date"].stringValue
-							newProject.projectSelfJsonLink = project["_links"]["href"].stringValue
-							newProject.projectURL = project["link"].stringValue
-							newProject.projectContent = project["content"]["rendered"].stringValue
-							newProject.projectTitle = project["title"]["rendered"].stringValue
-							newProject.projectExcerpt = project["excerpt"]["rendered"].stringValue
-							
-							// TODO: RETRIEVE PROJECT IMAGES FROM POST JSON
-							newProject.projectImages = updateImageData(json: project)
-							
+							realm.add(newProject)
+							print("Saved project info!")
 						}
 					} catch {
 						print("Error saving done status for newProject, Error: \(error)")
@@ -142,8 +165,9 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
 			print("Oh oh, wrong JSON reading...")
 		}
 
-        //updateUIWithProjectData()
-		loadProjects()
+		print("Done getting projects from JSON\n----")
+		
+		updateUIWithProjectData()
     }
 	
 	func updateImageData(json: JSON) -> ProjectImages {
@@ -158,8 +182,7 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
 				
 				let image = img.1
 				
-				print(image)
-				print("----------------")
+				print("\(image)\n---")
 				
 				projectImages["url"] = image["guid"]["rendered"].stringValue
 				projectImages["link"] = image["link"].stringValue
@@ -210,8 +233,17 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
 	
 	func updateUIWithProjectData() {
 		
-		print("updateUIWithProjectData")
+		print("updateUIWithProjectData...")
+		
+		
 		
 	}
 	
+}
+
+// MARK: - Private
+private extension CollectionViewController {
+	func projectForIndexPath(_ indexPath: IndexPath) -> Project {
+		return projects![indexPath.row]
+	}
 }
