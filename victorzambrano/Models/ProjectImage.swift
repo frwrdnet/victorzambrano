@@ -10,33 +10,40 @@ import Foundation
 import RealmSwift
 
 class ProjectImage: Object {
-	@objc dynamic var url = ""
-	@objc dynamic var link = ""
-	@objc dynamic var title = ""
-	@objc dynamic var slug = ""
-	@objc dynamic var mediaType = ""
-	@objc dynamic var mimeType = ""
-	@objc dynamic var imageFile = ""
-	@objc dynamic var imageWidth = ""
-	@objc dynamic var imageHeight = ""
-	@objc dynamic var imageSizeThumbnail = ""
-	@objc dynamic var imageSizeThumbnailWidth = ""
-	@objc dynamic var imageSizeThumbnailHeight = ""
-	@objc dynamic var imageSizeThumbnailMimeType = ""
-	@objc dynamic var imageSizeMedium = ""
-	@objc dynamic var imageSizeMediumWidth = ""
-	@objc dynamic var imageSizeMediumHeight = ""
-	@objc dynamic var imageSizeMediumMimeType = ""
-	@objc dynamic var imageSizeLarge = ""
-	@objc dynamic var imageSizeLargeWidth = ""
-	@objc dynamic var imageSizeLargeHeight = ""
-	@objc dynamic var imageSizeLargeMimeType = ""
-	@objc dynamic var imageSizeFeature = ""
-	@objc dynamic var imageSizeFeatureWidth = ""
-	@objc dynamic var imageSizeFeatureHeight = ""
-	@objc dynamic var imageSizeFeatureMimeType = ""
-	@objc dynamic var imageSizeFull = ""
-	@objc dynamic var imageSizeFullWidth = ""
-	@objc dynamic var imageSizeFullHeight = ""
-	@objc dynamic var imageSizeFullMimeType = ""
+	@objc dynamic var url: String?
+	@objc dynamic var link: String?
+	@objc dynamic var title: String?
+	@objc dynamic var slug: String?
+	
+	@objc dynamic var mediaType: String?
+	@objc dynamic var mimeType: String?
+	
+	@objc dynamic var imageFile: String?
+	@objc dynamic var imageWidth: String?
+	@objc dynamic var imageHeight: String?
+	
+	@objc dynamic var imageThumbnailURL: String?
+	@objc dynamic var imageThumbnailWidth: String?
+	@objc dynamic var imageThumbnailHeight: String?
+	@objc dynamic var imageThumbnailMimeType: String?
+	
+	@objc dynamic var imageMediumURL: String?
+	@objc dynamic var imageMediumWidth: String?
+	@objc dynamic var imageMediumHeight: String?
+	@objc dynamic var imageMediumMimeType: String?
+	
+	@objc dynamic var imageLargeURL: String?
+	@objc dynamic var imageLargeWidth: String?
+	@objc dynamic var imageLargeHeight: String?
+	@objc dynamic var imageLargeMimeType: String?
+	
+	@objc dynamic var imageFeatureURL: String?
+	@objc dynamic var imageFeatureWidth: String?
+	@objc dynamic var imageFeatureHeight: String?
+	@objc dynamic var imageFeatureMimeType: String?
+	
+	@objc dynamic var imageFullURL: String?
+	@objc dynamic var imageFullWidth: String?
+	@objc dynamic var imageFullHeight: String?
+	@objc dynamic var imageFullMimeType: String?
 }

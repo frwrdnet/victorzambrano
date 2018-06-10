@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,45 +18,32 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="VON-ih-6RF">
-                            <size key="itemSize" width="200" height="200"/>
+                            <size key="itemSize" width="200" height="230"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" reuseIdentifier="projectCell" id="Ltg-7x-vJa" customClass="ProjectCell" customModule="victorzambrano" customModuleProvider="target">
-                                <rect key="frame" x="87.5" y="0.0" width="200" height="200"/>
+                                <rect key="frame" x="87.5" y="0.0" width="200" height="230"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                    <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="200" height="230"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nik-qf-FBx">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nik-qf-FBx">
                                             <rect key="frame" x="8" y="8" width="184" height="150"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qko-9r-KbC">
-                                            <rect key="frame" x="8" y="166" width="184" height="34"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qko-9r-KbC">
+                                            <rect key="frame" x="8" y="168" width="184" height="62"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                 </view>
-                                <constraints>
-                                    <constraint firstItem="nik-qf-FBx" firstAttribute="top" secondItem="Ltg-7x-vJa" secondAttribute="topMargin" id="1a5-jp-LeN"/>
-                                    <constraint firstItem="nik-qf-FBx" firstAttribute="trailing" secondItem="Ltg-7x-vJa" secondAttribute="trailingMargin" id="3jN-fd-bfu"/>
-                                    <constraint firstItem="qko-9r-KbC" firstAttribute="top" secondItem="nik-qf-FBx" secondAttribute="bottom" constant="6" id="7z2-h0-6xJ"/>
-                                    <constraint firstAttribute="bottom" secondItem="qko-9r-KbC" secondAttribute="bottom" id="8Po-Ws-7TH"/>
-                                    <constraint firstItem="nik-qf-FBx" firstAttribute="leading" secondItem="Ltg-7x-vJa" secondAttribute="leadingMargin" id="E97-gy-v7v"/>
-                                    <constraint firstItem="qko-9r-KbC" firstAttribute="leading" secondItem="Ltg-7x-vJa" secondAttribute="leading" id="Fxb-ki-s4x"/>
-                                    <constraint firstAttribute="trailingMargin" secondItem="nik-qf-FBx" secondAttribute="trailing" id="Gi5-L1-pFC"/>
-                                    <constraint firstItem="nik-qf-FBx" firstAttribute="top" secondItem="Ltg-7x-vJa" secondAttribute="topMargin" id="PSC-Uj-luY"/>
-                                    <constraint firstItem="nik-qf-FBx" firstAttribute="leading" secondItem="Ltg-7x-vJa" secondAttribute="leadingMargin" id="R2n-BA-GJs"/>
-                                    <constraint firstItem="nik-qf-FBx" firstAttribute="trailing" secondItem="Ltg-7x-vJa" secondAttribute="trailingMargin" id="TdH-Gd-BjD"/>
-                                    <constraint firstItem="nik-qf-FBx" firstAttribute="top" secondItem="Ltg-7x-vJa" secondAttribute="topMargin" id="Ygd-j0-wUD"/>
-                                    <constraint firstItem="nik-qf-FBx" firstAttribute="leading" secondItem="Ltg-7x-vJa" secondAttribute="leadingMargin" id="oHv-oG-ddA"/>
-                                    <constraint firstAttribute="trailing" secondItem="qko-9r-KbC" secondAttribute="trailing" id="sxv-Iw-lAU"/>
-                                </constraints>
                                 <connections>
                                     <outlet property="projectThumbImage" destination="nik-qf-FBx" id="hWh-hP-W4J"/>
                                     <outlet property="projectThumbTitle" destination="qko-9r-KbC" id="Kgw-QU-yJN"/>

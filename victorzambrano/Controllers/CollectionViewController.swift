@@ -50,13 +50,30 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
 		//let cell = super.collectionView(collectionView, cellForItemAt: indexPath) as! ProjectCell
 		//cell.backgroundColor = UIColor.black
 		
-		let project = projects![indexPath.row]  //projectForIndexPath(indexPath)
+		if let project = projects?[indexPath.row]  { //projectForIndexPath(indexPath)
+			
+			print("----\n Project title: \(project.projectTitle)")
+			
+			cell.projectThumbTitle.text = project.projectTitle
+			cell.projectThumbImage.image = UIImage(named: "placeholder-thumbnail-fullwidth")
+			
+			//cell.projectThumbImage.image = getImageFromURL(imageURL: (project.projectImages.first?.imageThumbnailURL)!)
+			
+//			let imageHolder = getImageFromURL(imageName: project.projectImages.first?.slug ?? "image-\(project.projectSlug)", imageType: project.projectImages.first?.imageThumbnailURL ?? "jpg")
+//			if imageHolder.size.height > 0 {
+//				cell.projectThumbImage.image = imageHolder
+//			}
+			
+//			let projectImage = URL(fileURLWithPath: (project.projectImages.first?.imageThumbnailURL)!)
+//			do {
+//				let imageData = try Data(contentsOf: projectImage)
+//				cell.projectThumbImage.image = UIImage(data: imageData)
+//			} catch {
+//				print("Error getting image data \(error)")
+//			}
 		
-		print("Project title: \(project.projectTitle)")
+		}
 		
-		cell.projectThumbTitle.text = project.projectTitle
-		//cell.projectThumbImage.image = project.projectImage
-
 		// Configure the cell
 		return cell
 	}
@@ -92,22 +109,17 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
 		
 		print("loadProjects...")
 		
-		if let test0 = projects?[0].projectID {
-			print("Loading project data...")
-			projects = realm.objects(Project.self)
-		} else {
+//		if let test0 = projects?[0].projectID {
+//			print("Loading project data...")
+//			projects = realm.objects(Project.self)
+//		} else {
 			print("Getting project data...")
 			getProjectData(url: postURL, parameters: ["":""])
-		}
-			
+//		}
+		
 		//print("Projects: \(String(describing: projects))\n----")
 		
 	}
-	
-	// MARK: Project Image Management
-//	func getProjectImages(url: String, parameters: [String:String]) -> ProjectImages {
-//
-//	}
 
 	
     //MARK: - Networking
@@ -125,53 +137,6 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
                     let json : JSON = JSON(response.result.value!)
 
                     self.updateProjectsData(json: json)
-					
-//					print("updateProjectsData...")
-//
-//					if let temp1 = json[0]["date"].string {
-//
-//						for proj in json {
-//
-//							let project = proj.1
-//
-//							if let temp2 = project["id"].int {
-//
-//								// newProject
-//
-//								print("newProject = \(project)\n----")
-//
-//								let newProject = Project()
-//								newProject.projectID = project["id"].stringValue
-//								newProject.projectSlug = project["slug"].stringValue
-//								newProject.projectDate = project["date"].stringValue
-//								newProject.projectSelfJsonLink = project["_links"]["href"].stringValue
-//								newProject.projectURL = project["link"].stringValue
-//								newProject.projectContent = project["content"]["rendered"].stringValue
-//								newProject.projectTitle = project["title"]["rendered"].stringValue
-//								newProject.projectExcerpt = project["excerpt"]["rendered"].stringValue
-//
-//								// SAVE TO REALM DB
-//								do {
-//									try self.realm.write {
-//										self.realm.add(newProject)
-//										print("Saved project info!")
-//									}
-//								} catch {
-//									print("Error saving done status for newProject, Error: \(error)")
-//								}
-//
-//								// RETRIEVE PROJECT IMAGES FROM POST JSON
-//								let imagesURL = json["_links"]["wp:attachment"]["href"].stringValue
-//
-//								//newProject.projectImages = self.getProjectImagesData(url: imagesURL, parameters: ["" : ""])
-//
-//							} else {
-//								print("Could not find 'project[\"id\"].int'")
-//							}
-//						}
-//					} else {
-//						print("Oh oh, wrong JSON reading...")
-//					}
 
                 } else {
                     print("Error: \(String(describing: response.result.error))")
@@ -210,46 +175,57 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
 		
 		print("updateProjectsData...")
 		
+		print("json[0][\"slug\"].stringValue: \(json[0]["slug"].stringValue)")
+		
+		var index = 0
+		
 		if let temp1 = json[0]["date"].string {
 			
-			for (index, proj) in json {
+			for proj in json {
 				
-				let project = proj
+				let project = proj.1
 				
-				if let temp2 = project["id"].int {
+				if realm.objects(Project.self).filter("projectSlug CONTAINS %@", project["slug"].stringValue).count <= 0 {
+				//if let temp2 = project["id"].int {
 					
 					// newProject
 					
-					print("newProject = \(project)\n----")
+					print("newProject = \(project["slug"].stringValue)\n----")
 					
 					let newProject = Project()
 					newProject.projectID = project["id"].stringValue
 					newProject.projectSlug = project["slug"].stringValue
 					newProject.projectDate = project["date"].stringValue
-					newProject.projectSelfJsonLink = project["_links"]["href"].stringValue
+					newProject.projectSelfJsonLink = ""//project["_links"]["href"].stringValue
 					newProject.projectURL = project["link"].stringValue
-					newProject.projectContent = project["content"]["rendered"].stringValue
+					newProject.projectContent = ""//project["content"]["rendered"].stringValue
 					newProject.projectTitle = project["title"]["rendered"].stringValue
 					newProject.projectExcerpt = project["excerpt"]["rendered"].stringValue
 					
 					// RETRIEVE PROJECT IMAGES FROM POST JSON
-					let imagesURL = json["_links"]["wp:attachment"]["href"].stringValue
+					let imagesURL = project["_links"]["wp:attachment"][0]["href"].stringValue
+					print("imagesURL: \(imagesURL)")
 					
-					getProjectImagesData(url: imagesURL, parameters: ["" : ""], index: Int(index)!)
+					getProjectImagesData(url: imagesURL, parameters: ["" : ""], index: Int(index))
 					
 					// SAVE TO REALM DB
-					do {
-						try realm.write {
-							realm.add(newProject)
-							print("Saved project info!")
+					//if realm.objects(Project.self).filter("projectID CONTAINS[cd] %@", project["id"].stringValue).count == 0 {
+						do {
+							try realm.write {
+								realm.add(newProject)
+								projects = realm.objects(Project.self) //selectedCategory?.items.sorted(byKeyPath: "dateCreated", ascending: true)
+								print("Saved newProject \(index) info!")
+							}
+						} catch {
+							print("Error saving done status for newProject, Error: \(error)")
 						}
-					} catch {
-						print("Error saving done status for newProject, Error: \(error)")
-					}
-					
+					//}
+				
 				} else {
 					print("Could not find 'project[\"id\"].int'")
 				}
+				
+				index = index + 1
 			}
 		} else {
 			print("Oh oh, wrong JSON reading...")
@@ -257,10 +233,14 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
 
 		print("Done getting projects from JSON\n----")
 		
+		projects = realm.objects(Project.self)
+		
 		updateUIWithProjectData()
     }
 	
 	func updateProjectImagesData(json: JSON, index: Int) {
+		print("----\n updateProjectImagesData \(index)")
+		print("currentProject: \(String(describing: projects?[index].projectSlug))")
 		
 		let images = json
 		
@@ -272,7 +252,7 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
 			
 			let image = img.1
 			
-			print("\(image)\n---")
+			//print("\(image)\n---")
 			
 			projectImage["url"] = image["guid"]["rendered"].stringValue
 			projectImage["link"] = image["link"].stringValue
@@ -284,41 +264,37 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
 			projectImage["imageHeight"] = image["media_details"]["height"].stringValue
 			projectImage["imageFile"] = image["media_details"]["height"].stringValue
 			
-			projectImage["imageSizeThumbnail"] = image["media_details"]["sizes"]["thumbnail"]["source_url"].stringValue
-			projectImage["imageSizeThumbnailWidth"] = image["media_details"]["sizes"]["thumbnail"]["width"].stringValue
-			projectImage["imageSizeThumbnailHeight"] = image["media_details"]["sizes"]["thumbnail"]["height"].stringValue
-			projectImage["imageSizeThumbnailMimeType"] = image["media_details"]["sizes"]["thumbnail"]["mime_type"].stringValue
+			projectImage["imageThumbnailURL"] = image["media_details"]["sizes"]["thumbnail"]["source_url"].stringValue
+			projectImage["imageThumbnailWidth"] = image["media_details"]["sizes"]["thumbnail"]["width"].stringValue
+			projectImage["imageThumbnailHeight"] = image["media_details"]["sizes"]["thumbnail"]["height"].stringValue
+			projectImage["imageThumbnailMimeType"] = image["media_details"]["sizes"]["thumbnail"]["mime_type"].stringValue
 			
-			projectImage["imageSizeMedium"] = image["media_details"]["sizes"]["medium"]["source_url"].stringValue
-			projectImage["imageSizeMediumWidth"] = image["media_details"]["sizes"]["medium"]["width"].stringValue
-			projectImage["imageSizeMediumHeight"] = image["media_details"]["sizes"]["medium"]["height"].stringValue
-			projectImage["imageSizeMediumMimeType"] = image["media_details"]["sizes"]["medium"]["mime_type"].stringValue
+			projectImage["imageMediumURL"] = image["media_details"]["sizes"]["medium"]["source_url"].stringValue
+			projectImage["imageMediumWidth"] = image["media_details"]["sizes"]["medium"]["width"].stringValue
+			projectImage["imageMediumHeight"] = image["media_details"]["sizes"]["medium"]["height"].stringValue
+			projectImage["imageMediumMimeType"] = image["media_details"]["sizes"]["medium"]["mime_type"].stringValue
 			
-			projectImage["imageSizeLarge"] = image["media_details"]["sizes"]["large"]["source_url"].stringValue
-			projectImage["imageSizeLargeWidth"] = image["media_details"]["sizes"]["large"]["width"].stringValue
-			projectImage["imageSizeLargeHeight"] = image["media_details"]["sizes"]["large"]["height"].stringValue
-			projectImage["imageSizeLargeMimeType"] = image["media_details"]["sizes"]["large"]["mime_type"].stringValue
+			projectImage["imageLargeURL"] = image["media_details"]["sizes"]["large"]["source_url"].stringValue
+			projectImage["imageLargeWidth"] = image["media_details"]["sizes"]["large"]["width"].stringValue
+			projectImage["imageLargeHeight"] = image["media_details"]["sizes"]["large"]["height"].stringValue
+			projectImage["imageLargeMimeType"] = image["media_details"]["sizes"]["large"]["mime_type"].stringValue
 			
-			projectImage["imageSizeFeature"] = image["media_details"]["sizes"]["feature_image"]["source_url"].stringValue
-			projectImage["imageSizeFeatureWidth"] = image["media_details"]["sizes"]["feature_image"]["width"].stringValue
-			projectImage["imageSizeFeatureHeight"] = image["media_details"]["sizes"]["feature_image"]["height"].stringValue
-			projectImage["imageSizeFeatureMimeType"] = image["media_details"]["sizes"]["feature_image"]["mime_type"].stringValue
+			projectImage["imageFeatureURL"] = image["media_details"]["sizes"]["feature_image"]["source_url"].stringValue
+			projectImage["imageFeatureWidth"] = image["media_details"]["sizes"]["feature_image"]["width"].stringValue
+			projectImage["imageFeatureHeight"] = image["media_details"]["sizes"]["feature_image"]["height"].stringValue
+			projectImage["imageFeatureMimeType"] = image["media_details"]["sizes"]["feature_image"]["mime_type"].stringValue
 			
-			projectImage["imageSizeFull"] = image["media_details"]["sizes"]["full"]["source_url"].stringValue
-			projectImage["imageSizeFullWidth"] = image["media_details"]["sizes"]["full"]["width"].stringValue
-			projectImage["imageSizeFullHeight"] = image["media_details"]["sizes"]["full"]["height"].stringValue
-			projectImage["imageSizeFullMimeType"] = image["media_details"]["sizes"]["full"]["mime_type"].stringValue
-			
-			//imagesList?.append(projectImage)
+			projectImage["imageFullURL"] = image["media_details"]["sizes"]["full"]["source_url"].stringValue
+			projectImage["imageFullWidth"] = image["media_details"]["sizes"]["full"]["width"].stringValue
+			projectImage["imageFullHeight"] = image["media_details"]["sizes"]["full"]["height"].stringValue
+			projectImage["imageFullMimeType"] = image["media_details"]["sizes"]["full"]["mime_type"].stringValue
 			
 			if let currentProject = projects?[index] {
-				
 				// SAVE TO REALM DB
 				do {
 					try realm.write {
-						//realm.add(imagesList)
 						currentProject.projectImages.append(projectImage)
-						print("\(index): Saved project images!")
+						print("Saved project image: \(projectImage.slug)!")
 					}
 				} catch {
 					print("Error saving images for currentProject, Error: \(error)")
@@ -327,6 +303,60 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
 			
 		} // end for
 		
+		collectionView?.reloadData()
+		
+	}
+	
+	func checkIfProjectExists(projectID: String) -> Bool {
+		let foo = realm.objects(Project.self).filter("projectID CONTAINS[cd] %@", projectID)
+		if foo.count > 0 {
+			return false
+		}
+		return true
+//		let predicate = NSPredicate(format: "date = %@", findDate as CVarArg)
+//		let dateObject = self.realm.objects(ChartCount.self).filter(predicate).first
+//
+//		if dateObject?.date == findDate{
+//			return dateObject
+//		}
+//		return nil
+	}
+	
+	func getImageFromURL(imageURL: String) -> UIImage {
+		var image: UIImage?
+		let pictureURL = URL(string: imageURL)!
+		
+		// Creating a session object with the default configuration.
+		// You can read more about it here https://developer.apple.com/reference/foundation/urlsessionconfiguration
+		let session = URLSession(configuration: .default)
+		
+		// Define a download task. The download task will download the contents of the URL as a Data object and then you can do what you wish with that data.
+		let downloadPicTask = session.dataTask(with: pictureURL) { (data, response, error) in
+			// The download has finished.
+			if let e = error {
+				print("Error downloading picture: \(e)")
+			} else {
+				// No errors found.
+				// It would be weird if we didn't have a response, so check for that too.
+				if let res = response as? HTTPURLResponse {
+					print("Downloaded picture with response code \(res.statusCode)")
+					if let imageData = data {
+						// Finally convert that Data into an image and do what you wish with it.
+						image = UIImage(data: imageData)
+						// Do something with your image.
+						print("Got the image!")
+					} else {
+						print("Couldn't get image: Image is nil")
+					}
+				} else {
+					print("Couldn't get response code for some reason")
+				}
+			}
+		}
+		
+		downloadPicTask.resume()
+		
+		return image!
 	}
 	
 	
@@ -335,10 +365,9 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
 	
 	func updateUIWithProjectData() {
 		
-		print("updateUIWithProjectData...")
+		print("========\n updateUIWithProjectData... \n========")
 		
-		loadProjects()
-		
+		collectionView?.reloadData()
 	}
 	
 }

@@ -15,7 +15,6 @@
 		577E91F820C659E400008CE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 577E91F720C659E400008CE0 /* Assets.xcassets */; };
 		577E91FB20C659E400008CE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 577E91F920C659E400008CE0 /* LaunchScreen.storyboard */; };
 		577E920620C6604000008CE0 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577E920520C6604000008CE0 /* Project.swift */; };
-		57CE861720C7B2B9005EEE70 /* ProjectImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CE861620C7B2B9005EEE70 /* ProjectImages.swift */; };
 		CF94850C8DD1921D33324B87 /* Pods_victorzambrano.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA7DF7D565FCBBD3F3DC4484 /* Pods_victorzambrano.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,7 +30,6 @@
 		577E91FA20C659E400008CE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		577E91FC20C659E400008CE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		577E920520C6604000008CE0 /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
-		57CE861620C7B2B9005EEE70 /* ProjectImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectImages.swift; sourceTree = "<group>"; };
 		679955D3C4277EE8A80A8F1F /* Pods-victorzambrano.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-victorzambrano.debug.xcconfig"; path = "Pods/Target Support Files/Pods-victorzambrano/Pods-victorzambrano.debug.xcconfig"; sourceTree = "<group>"; };
 		AA7DF7D565FCBBD3F3DC4484 /* Pods_victorzambrano.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_victorzambrano.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -110,7 +108,6 @@
 			isa = PBXGroup;
 			children = (
 				577E920520C6604000008CE0 /* Project.swift */,
-				57CE861620C7B2B9005EEE70 /* ProjectImages.swift */,
 				5737FBE420CBBB26003153DA /* ProjectImage.swift */,
 			);
 			path = Models;
@@ -242,7 +239,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57CE861720C7B2B9005EEE70 /* ProjectImages.swift in Sources */,
 				577E91F020C659E300008CE0 /* CollectionViewController.swift in Sources */,
 				577E91EE20C659E300008CE0 /* AppDelegate.swift in Sources */,
 				5737FBE520CBBB26003153DA /* ProjectImage.swift in Sources */,
