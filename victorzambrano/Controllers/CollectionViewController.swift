@@ -20,11 +20,14 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
 	var selectedProject: Project?
 	
 	// portfolio projects
-	let postURL = "https://victorzambrano.com/wp-json/wp/v2/jetpack-portfolio?jetpack-portfolio-type=72"
+	//let portfolioType = 72
+	//let postURL = "https://victorzambrano.com/wp-json/wp/v2/jetpack-portfolio?jetpack-portfolio-type=72"
+	let postURL = "https://victorzambrano.com/wp-json/wp/v2/jetpack-portfolio"
 	
 	let reuseIdentifier = "projectCell"
-	let sectionInsets = UIEdgeInsets(top: 50.0, left: 20.0, bottom: 50.0, right: 20.0)
+	let sectionInsets = UIEdgeInsets(top: 20.0, left: 20.0, bottom: 20.0, right: 20.0)
 	let itemsPerRow: CGFloat = 3
+	let itemsPerColumn: CGFloat = 6
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -55,7 +58,7 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
 			print("----\n Project title: \(project.projectTitle)")
 			
 			cell.projectThumbTitle.text = project.projectTitle
-			cell.projectThumbImage.image = UIImage(named: "placeholder-thumbnail-fullwidth")
+			cell.projectThumbImage.image = UIImage(named: "placeholder-thumbnail-fullwidth-150x150")
 			
 			//cell.projectThumbImage.image = getImageFromURL(imageURL: (project.projectImages.first?.imageThumbnailURL)!)
 			
@@ -82,40 +85,42 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
 
 		print("collectionView - cellForItemAt")
 
-		let paddingSpace = sectionInsets.left * (itemsPerRow + 1)
-		let availableWidth = view.frame.width - paddingSpace
-		let widthPerItem = availableWidth / itemsPerRow
+//		let paddingSpace = sectionInsets.left * (itemsPerRow + 1)
+//		let availableWidth = view.frame.width - paddingSpace
+//		widthPerItem = availableWidth / itemsPerRow
+//
+//		let availableHeight = view.frame.height - paddingSpace
+//		heightPerItem = availableHeight / itemsPerColumn
+			
+		// Set cell width to 100%
+		let widthPerItem = collectionView.bounds.size.width // CGFloat(150.0)
+		let heightPerItem = CGFloat(500.0)
 
-		return CGSize(width: widthPerItem, height: widthPerItem)
+		return CGSize(width: widthPerItem, height: heightPerItem)
 	}
 
-//	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-//
-//		print("collectionView - insetForSectionAt")
-//
-//		return sectionInsets
-//
-//	}
-//
-//	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-//
-//		print("collectionView - minimumLineSpacingForSectionAt")
-//
-//		return sectionInsets.left
-//
-//	}
+	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+
+		print("collectionView - insetForSectionAt")
+
+		return sectionInsets
+
+	}
+
+	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+
+		print("collectionView - minimumLineSpacingForSectionAt")
+
+		return sectionInsets.left
+
+	}
 	
 	func loadProjects() {
 		
 		print("loadProjects...")
-		
-//		if let test0 = projects?[0].projectID {
-//			print("Loading project data...")
-//			projects = realm.objects(Project.self)
-//		} else {
-			print("Getting project data...")
-			getProjectData(url: postURL, parameters: ["":""])
-//		}
+
+		print("Getting project data...")
+		getProjectData(url: postURL, parameters: ["":""])
 		
 		//print("Projects: \(String(describing: projects))\n----")
 		
