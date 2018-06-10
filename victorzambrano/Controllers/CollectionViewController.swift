@@ -238,8 +238,6 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
 
 		print("Done getting projects from JSON\n----")
 		
-		projects = realm.objects(Project.self)
-		
 		updateUIWithProjectData()
     }
 	
@@ -371,6 +369,8 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
 	func updateUIWithProjectData() {
 		
 		print("========\n updateUIWithProjectData... \n========")
+		
+		projects = realm.objects(Project.self).sorted(byKeyPath: "projectDate", ascending: false)
 		
 		collectionView?.reloadData()
 	}
