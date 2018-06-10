@@ -25,7 +25,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="projectCell" id="Ltg-7x-vJa" customClass="ProjectCell" customModule="victorzambrano" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" reuseIdentifier="projectCell" id="Ltg-7x-vJa" customClass="ProjectCell" customModule="victorzambrano" customModuleProvider="target">
                                 <rect key="frame" x="87.5" y="0.0" width="200" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -58,6 +58,10 @@
                                     <constraint firstItem="nik-qf-FBx" firstAttribute="leading" secondItem="Ltg-7x-vJa" secondAttribute="leadingMargin" id="oHv-oG-ddA"/>
                                     <constraint firstAttribute="trailing" secondItem="qko-9r-KbC" secondAttribute="trailing" id="sxv-Iw-lAU"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="projectThumbImage" destination="nik-qf-FBx" id="hWh-hP-W4J"/>
+                                    <outlet property="projectThumbTitle" destination="qko-9r-KbC" id="Kgw-QU-yJN"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -65,10 +69,6 @@
                             <outlet property="delegate" destination="aO9-u5-1HK" id="qaT-sJ-zJr"/>
                         </connections>
                     </collectionView>
-                    <connections>
-                        <outlet property="projectThumbImage" destination="nik-qf-FBx" id="npX-WC-bRo"/>
-                        <outlet property="projectThumbTitle" destination="qko-9r-KbC" id="F2J-2N-Tai"/>
-                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fs2-NS-0U0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

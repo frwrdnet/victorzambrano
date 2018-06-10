@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5729981820CBB02B0018B356 /* ProjectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5729981720CBB02B0018B356 /* ProjectCell.swift */; };
+		5737FBE520CBBB26003153DA /* ProjectImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5737FBE420CBBB26003153DA /* ProjectImage.swift */; };
 		577E91EE20C659E300008CE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577E91ED20C659E300008CE0 /* AppDelegate.swift */; };
 		577E91F020C659E300008CE0 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577E91EF20C659E300008CE0 /* CollectionViewController.swift */; };
 		577E91F320C659E300008CE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 577E91F120C659E300008CE0 /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		2EBE24E893D3ED6E0275391E /* Pods-victorzambrano.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-victorzambrano.release.xcconfig"; path = "Pods/Target Support Files/Pods-victorzambrano/Pods-victorzambrano.release.xcconfig"; sourceTree = "<group>"; };
 		5729981720CBB02B0018B356 /* ProjectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCell.swift; sourceTree = "<group>"; };
+		5737FBE420CBBB26003153DA /* ProjectImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectImage.swift; sourceTree = "<group>"; };
 		577E91EA20C659E300008CE0 /* victorzambrano.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = victorzambrano.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		577E91ED20C659E300008CE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		577E91EF20C659E300008CE0 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 			children = (
 				577E920520C6604000008CE0 /* Project.swift */,
 				57CE861620C7B2B9005EEE70 /* ProjectImages.swift */,
+				5737FBE420CBBB26003153DA /* ProjectImage.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 				57CE861720C7B2B9005EEE70 /* ProjectImages.swift in Sources */,
 				577E91F020C659E300008CE0 /* CollectionViewController.swift in Sources */,
 				577E91EE20C659E300008CE0 /* AppDelegate.swift in Sources */,
+				5737FBE520CBBB26003153DA /* ProjectImage.swift in Sources */,
 				5729981820CBB02B0018B356 /* ProjectCell.swift in Sources */,
 				577E920620C6604000008CE0 /* Project.swift in Sources */,
 			);
