@@ -1,0 +1,1572 @@
+[
+	{
+		"id": 2487,
+		"date": "2017-07-24T02:26:20",
+		"date_gmt": "2017-07-24T02:26:20",
+		"guid": {
+			"rendered": "http://victorzambrano.com/wp-content/uploads/2016/10/G-Templates-Section-Flow.jpg"
+		},
+		"modified": "2017-07-24T02:26:20",
+		"modified_gmt": "2017-07-24T02:26:20",
+		"slug": "g-templates-section-flow",
+		"status": "inherit",
+		"type": "attachment",
+		"link": "https://victorzambrano.com/portfolio/cloud-wifi-management-apps/attachment/g-templates-section-flow/",
+		"title": {
+			"rendered": "G-Templates-Section-Flow"
+		},
+		"author": 2,
+		"comment_status": "closed",
+		"ping_status": "closed",
+		"template": "",
+		"meta": [
+
+		],
+		"description": {
+			"rendered": "<p class=\"attachment\"><a href='https://victorzambrano.com/wp-content/uploads/2016/10/G-Templates-Section-Flow.jpg'><img width=\"300\" height=\"111\" src=\"https://victorzambrano.com/wp-content/uploads/2016/10/G-Templates-Section-Flow-300x111.jpg\" class=\"attachment-medium size-medium\" alt=\"\" srcset=\"https://victorzambrano.com/wp-content/uploads/2016/10/G-Templates-Section-Flow-300x111.jpg 300w, https://victorzambrano.com/wp-content/uploads/2016/10/G-Templates-Section-Flow-768x284.jpg 768w, https://victorzambrano.com/wp-content/uploads/2016/10/G-Templates-Section-Flow-1024x379.jpg 1024w, https://victorzambrano.com/wp-content/uploads/2016/10/G-Templates-Section-Flow-380x141.jpg 380w\" sizes=\"(max-width: 300px) 100vw, 300px\" data-attachment-id=\"2487\" data-permalink=\"https://victorzambrano.com/portfolio/cloud-wifi-management-apps/attachment/g-templates-section-flow/\" data-orig-file=\"https://victorzambrano.com/wp-content/uploads/2016/10/G-Templates-Section-Flow.jpg\" data-orig-size=\"2107,780\" data-comments-opened=\"0\" data-image-meta=\"{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}\" data-image-title=\"G-Templates-Section-Flow\" data-image-description=\"\" data-medium-file=\"https://victorzambrano.com/wp-content/uploads/2016/10/G-Templates-Section-Flow-300x111.jpg\" data-large-file=\"https://victorzambrano.com/wp-content/uploads/2016/10/G-Templates-Section-Flow-1024x379.jpg\" /></a></p>\n"
+		},
+		"caption": {
+			"rendered": ""
+		},
+		"alt_text": "",
+		"media_type": "image",
+		"mime_type": "image/jpeg",
+		"media_details": {
+			"width": 2107,
+			"height": 780,
+			"file": "2016/10/G-Templates-Section-Flow.jpg",
+			"sizes": {
+				"thumbnail": {
+					"file": "G-Templates-Section-Flow-150x150.jpg",
+					"width": 150,
+					"height": 150,
+					"mime_type": "image/jpeg",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/G-Templates-Section-Flow-150x150.jpg"
+				},
+				"medium": {
+					"file": "G-Templates-Section-Flow-300x111.jpg",
+					"width": 300,
+					"height": 111,
+					"mime_type": "image/jpeg",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/G-Templates-Section-Flow-300x111.jpg"
+				},
+				"medium_large": {
+					"file": "G-Templates-Section-Flow-768x284.jpg",
+					"width": 768,
+					"height": 284,
+					"mime_type": "image/jpeg",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/G-Templates-Section-Flow-768x284.jpg"
+				},
+				"large": {
+					"file": "G-Templates-Section-Flow-1024x379.jpg",
+					"width": 1024,
+					"height": 379,
+					"mime_type": "image/jpeg",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/G-Templates-Section-Flow-1024x379.jpg"
+				},
+				"post-thumbnail": {
+					"file": "G-Templates-Section-Flow-284x150.jpg",
+					"width": 284,
+					"height": 150,
+					"mime_type": "image/jpeg",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/G-Templates-Section-Flow-284x150.jpg"
+				},
+				"gallery_small": {
+					"file": "G-Templates-Section-Flow-380x141.jpg",
+					"width": 380,
+					"height": 141,
+					"mime_type": "image/jpeg",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/G-Templates-Section-Flow-380x141.jpg"
+				},
+				"feature_image": {
+					"file": "G-Templates-Section-Flow-1400x780.jpg",
+					"width": 1400,
+					"height": 780,
+					"mime_type": "image/jpeg",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/G-Templates-Section-Flow-1400x780.jpg"
+				},
+				"icon_size": {
+					"file": "G-Templates-Section-Flow-40x40.jpg",
+					"width": 40,
+					"height": 40,
+					"mime_type": "image/jpeg",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/G-Templates-Section-Flow-40x40.jpg"
+				},
+				"jetpack-portfolio-admin-thumb": {
+					"file": "G-Templates-Section-Flow-50x50.jpg",
+					"width": 50,
+					"height": 50,
+					"mime_type": "image/jpeg",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/G-Templates-Section-Flow-50x50.jpg"
+				},
+				"full": {
+					"file": "G-Templates-Section-Flow.jpg",
+					"width": 2107,
+					"height": 780,
+					"mime_type": "image/jpeg",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/G-Templates-Section-Flow.jpg"
+				}
+			},
+			"image_meta": {
+				"aperture": "0",
+				"credit": "",
+				"camera": "",
+				"caption": "",
+				"created_timestamp": "0",
+				"copyright": "",
+				"focal_length": "0",
+				"iso": "0",
+				"shutter_speed": "0",
+				"title": "",
+				"orientation": "0",
+				"keywords": [
+
+				]
+			}
+		},
+		"post": 2027,
+		"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/G-Templates-Section-Flow.jpg",
+		"_links": {
+			"self": [
+				{
+					"href": "https://victorzambrano.com/wp-json/wp/v2/media/2487"
+				}
+			],
+			"collection": [
+				{
+					"href": "https://victorzambrano.com/wp-json/wp/v2/media"
+				}
+			],
+			"about": [
+				{
+					"href": "https://victorzambrano.com/wp-json/wp/v2/types/attachment"
+				}
+			],
+			"author": [
+				{
+					"embeddable": true,
+					"href": "https://victorzambrano.com/wp-json/wp/v2/users/2"
+				}
+			],
+			"replies": [
+				{
+					"embeddable": true,
+					"href": "https://victorzambrano.com/wp-json/wp/v2/comments?post=2487"
+				}
+			]
+		}
+	},
+	{
+		"id": 2486,
+		"date": "2017-07-24T02:26:17",
+		"date_gmt": "2017-07-24T02:26:17",
+		"guid": {
+			"rendered": "http://victorzambrano.com/wp-content/uploads/2016/10/F-Software-Update-Section-Flow.jpg"
+		},
+		"modified": "2017-07-24T02:26:17",
+		"modified_gmt": "2017-07-24T02:26:17",
+		"slug": "f-software-update-section-flow",
+		"status": "inherit",
+		"type": "attachment",
+		"link": "https://victorzambrano.com/portfolio/cloud-wifi-management-apps/attachment/f-software-update-section-flow/",
+		"title": {
+			"rendered": "F-Software-Update-Section-Flow"
+		},
+		"author": 2,
+		"comment_status": "closed",
+		"ping_status": "closed",
+		"template": "",
+		"meta": [
+
+		],
+		"description": {
+			"rendered": "<p class=\"attachment\"><a href='https://victorzambrano.com/wp-content/uploads/2016/10/F-Software-Update-Section-Flow.jpg'><img width=\"300\" height=\"33\" src=\"https://victorzambrano.com/wp-content/uploads/2016/10/F-Software-Update-Section-Flow-300x33.jpg\" class=\"attachment-medium size-medium\" alt=\"\" srcset=\"https://victorzambrano.com/wp-content/uploads/2016/10/F-Software-Update-Section-Flow-300x33.jpg 300w, https://victorzambrano.com/wp-content/uploads/2016/10/F-Software-Update-Section-Flow-768x85.jpg 768w, https://victorzambrano.com/wp-content/uploads/2016/10/F-Software-Update-Section-Flow-1024x114.jpg 1024w, https://victorzambrano.com/wp-content/uploads/2016/10/F-Software-Update-Section-Flow-380x42.jpg 380w\" sizes=\"(max-width: 300px) 100vw, 300px\" data-attachment-id=\"2486\" data-permalink=\"https://victorzambrano.com/portfolio/cloud-wifi-management-apps/attachment/f-software-update-section-flow/\" data-orig-file=\"https://victorzambrano.com/wp-content/uploads/2016/10/F-Software-Update-Section-Flow.jpg\" data-orig-size=\"5009,557\" data-comments-opened=\"0\" data-image-meta=\"{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}\" data-image-title=\"F-Software-Update-Section-Flow\" data-image-description=\"\" data-medium-file=\"https://victorzambrano.com/wp-content/uploads/2016/10/F-Software-Update-Section-Flow-300x33.jpg\" data-large-file=\"https://victorzambrano.com/wp-content/uploads/2016/10/F-Software-Update-Section-Flow-1024x114.jpg\" /></a></p>\n"
+		},
+		"caption": {
+			"rendered": ""
+		},
+		"alt_text": "",
+		"media_type": "image",
+		"mime_type": "image/jpeg",
+		"media_details": {
+			"width": 5009,
+			"height": 557,
+			"file": "2016/10/F-Software-Update-Section-Flow.jpg",
+			"sizes": {
+				"thumbnail": {
+					"file": "F-Software-Update-Section-Flow-150x150.jpg",
+					"width": 150,
+					"height": 150,
+					"mime_type": "image/jpeg",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/F-Software-Update-Section-Flow-150x150.jpg"
+				},
+				"medium": {
+					"file": "F-Software-Update-Section-Flow-300x33.jpg",
+					"width": 300,
+					"height": 33,
+					"mime_type": "image/jpeg",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/F-Software-Update-Section-Flow-300x33.jpg"
+				},
+				"medium_large": {
+					"file": "F-Software-Update-Section-Flow-768x85.jpg",
+					"width": 768,
+					"height": 85,
+					"mime_type": "image/jpeg",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/F-Software-Update-Section-Flow-768x85.jpg"
+				},
+				"large": {
+					"file": "F-Software-Update-Section-Flow-1024x114.jpg",
+					"width": 1024,
+					"height": 114,
+					"mime_type": "image/jpeg",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/F-Software-Update-Section-Flow-1024x114.jpg"
+				},
+				"post-thumbnail": {
+					"file": "F-Software-Update-Section-Flow-284x150.jpg",
+					"width": 284,
+					"height": 150,
+					"mime_type": "image/jpeg",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/F-Software-Update-Section-Flow-284x150.jpg"
+				},
+				"gallery_small": {
+					"file": "F-Software-Update-Section-Flow-380x42.jpg",
+					"width": 380,
+					"height": 42,
+					"mime_type": "image/jpeg",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/F-Software-Update-Section-Flow-380x42.jpg"
+				},
+				"feature_image": {
+					"file": "F-Software-Update-Section-Flow-1400x557.jpg",
+					"width": 1400,
+					"height": 557,
+					"mime_type": "image/jpeg",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/F-Software-Update-Section-Flow-1400x557.jpg"
+				},
+				"icon_size": {
+					"file": "F-Software-Update-Section-Flow-40x40.jpg",
+					"width": 40,
+					"height": 40,
+					"mime_type": "image/jpeg",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/F-Software-Update-Section-Flow-40x40.jpg"
+				},
+				"jetpack-portfolio-admin-thumb": {
+					"file": "F-Software-Update-Section-Flow-50x50.jpg",
+					"width": 50,
+					"height": 50,
+					"mime_type": "image/jpeg",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/F-Software-Update-Section-Flow-50x50.jpg"
+				},
+				"full": {
+					"file": "F-Software-Update-Section-Flow.jpg",
+					"width": 5009,
+					"height": 557,
+					"mime_type": "image/jpeg",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/F-Software-Update-Section-Flow.jpg"
+				}
+			},
+			"image_meta": {
+				"aperture": "0",
+				"credit": "",
+				"camera": "",
+				"caption": "",
+				"created_timestamp": "0",
+				"copyright": "",
+				"focal_length": "0",
+				"iso": "0",
+				"shutter_speed": "0",
+				"title": "",
+				"orientation": "0",
+				"keywords": [
+
+				]
+			}
+		},
+		"post": 2027,
+		"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/F-Software-Update-Section-Flow.jpg",
+		"_links": {
+			"self": [
+				{
+					"href": "https://victorzambrano.com/wp-json/wp/v2/media/2486"
+				}
+			],
+			"collection": [
+				{
+					"href": "https://victorzambrano.com/wp-json/wp/v2/media"
+				}
+			],
+			"about": [
+				{
+					"href": "https://victorzambrano.com/wp-json/wp/v2/types/attachment"
+				}
+			],
+			"author": [
+				{
+					"embeddable": true,
+					"href": "https://victorzambrano.com/wp-json/wp/v2/users/2"
+				}
+			],
+			"replies": [
+				{
+					"embeddable": true,
+					"href": "https://victorzambrano.com/wp-json/wp/v2/comments?post=2486"
+				}
+			]
+		}
+	},
+	{
+		"id": 2485,
+		"date": "2017-07-24T02:26:11",
+		"date_gmt": "2017-07-24T02:26:11",
+		"guid": {
+			"rendered": "http://victorzambrano.com/wp-content/uploads/2016/10/C-Nodes-Section-Flow.jpg"
+		},
+		"modified": "2017-07-24T02:26:11",
+		"modified_gmt": "2017-07-24T02:26:11",
+		"slug": "c-nodes-section-flow",
+		"status": "inherit",
+		"type": "attachment",
+		"link": "https://victorzambrano.com/portfolio/cloud-wifi-management-apps/attachment/c-nodes-section-flow/",
+		"title": {
+			"rendered": "C-Nodes-Section-Flow"
+		},
+		"author": 2,
+		"comment_status": "closed",
+		"ping_status": "closed",
+		"template": "",
+		"meta": [
+
+		],
+		"description": {
+			"rendered": "<p class=\"attachment\"><a href='https://victorzambrano.com/wp-content/uploads/2016/10/C-Nodes-Section-Flow.jpg'><img width=\"300\" height=\"140\" src=\"https://victorzambrano.com/wp-content/uploads/2016/10/C-Nodes-Section-Flow-300x140.jpg\" class=\"attachment-medium size-medium\" alt=\"\" srcset=\"https://victorzambrano.com/wp-content/uploads/2016/10/C-Nodes-Section-Flow-300x140.jpg 300w, https://victorzambrano.com/wp-content/uploads/2016/10/C-Nodes-Section-Flow-768x358.jpg 768w, https://victorzambrano.com/wp-content/uploads/2016/10/C-Nodes-Section-Flow-1024x478.jpg 1024w, https://victorzambrano.com/wp-content/uploads/2016/10/C-Nodes-Section-Flow-380x177.jpg 380w\" sizes=\"(max-width: 300px) 100vw, 300px\" data-attachment-id=\"2485\" data-permalink=\"https://victorzambrano.com/portfolio/cloud-wifi-management-apps/attachment/c-nodes-section-flow/\" data-orig-file=\"https://victorzambrano.com/wp-content/uploads/2016/10/C-Nodes-Section-Flow.jpg\" data-orig-size=\"5586,2607\" data-comments-opened=\"0\" data-image-meta=\"{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}\" data-image-title=\"C-Nodes-Section-Flow\" data-image-description=\"\" data-medium-file=\"https://victorzambrano.com/wp-content/uploads/2016/10/C-Nodes-Section-Flow-300x140.jpg\" data-large-file=\"https://victorzambrano.com/wp-content/uploads/2016/10/C-Nodes-Section-Flow-1024x478.jpg\" /></a></p>\n"
+		},
+		"caption": {
+			"rendered": ""
+		},
+		"alt_text": "",
+		"media_type": "image",
+		"mime_type": "image/jpeg",
+		"media_details": {
+			"width": 5586,
+			"height": 2607,
+			"file": "2016/10/C-Nodes-Section-Flow.jpg",
+			"sizes": {
+				"thumbnail": {
+					"file": "C-Nodes-Section-Flow-150x150.jpg",
+					"width": 150,
+					"height": 150,
+					"mime_type": "image/jpeg",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/C-Nodes-Section-Flow-150x150.jpg"
+				},
+				"medium": {
+					"file": "C-Nodes-Section-Flow-300x140.jpg",
+					"width": 300,
+					"height": 140,
+					"mime_type": "image/jpeg",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/C-Nodes-Section-Flow-300x140.jpg"
+				},
+				"medium_large": {
+					"file": "C-Nodes-Section-Flow-768x358.jpg",
+					"width": 768,
+					"height": 358,
+					"mime_type": "image/jpeg",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/C-Nodes-Section-Flow-768x358.jpg"
+				},
+				"large": {
+					"file": "C-Nodes-Section-Flow-1024x478.jpg",
+					"width": 1024,
+					"height": 478,
+					"mime_type": "image/jpeg",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/C-Nodes-Section-Flow-1024x478.jpg"
+				},
+				"post-thumbnail": {
+					"file": "C-Nodes-Section-Flow-284x150.jpg",
+					"width": 284,
+					"height": 150,
+					"mime_type": "image/jpeg",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/C-Nodes-Section-Flow-284x150.jpg"
+				},
+				"gallery_small": {
+					"file": "C-Nodes-Section-Flow-380x177.jpg",
+					"width": 380,
+					"height": 177,
+					"mime_type": "image/jpeg",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/C-Nodes-Section-Flow-380x177.jpg"
+				},
+				"feature_image": {
+					"file": "C-Nodes-Section-Flow-1400x900.jpg",
+					"width": 1400,
+					"height": 900,
+					"mime_type": "image/jpeg",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/C-Nodes-Section-Flow-1400x900.jpg"
+				},
+				"icon_size": {
+					"file": "C-Nodes-Section-Flow-40x40.jpg",
+					"width": 40,
+					"height": 40,
+					"mime_type": "image/jpeg",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/C-Nodes-Section-Flow-40x40.jpg"
+				},
+				"jetpack-portfolio-admin-thumb": {
+					"file": "C-Nodes-Section-Flow-50x50.jpg",
+					"width": 50,
+					"height": 50,
+					"mime_type": "image/jpeg",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/C-Nodes-Section-Flow-50x50.jpg"
+				},
+				"full": {
+					"file": "C-Nodes-Section-Flow.jpg",
+					"width": 5586,
+					"height": 2607,
+					"mime_type": "image/jpeg",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/C-Nodes-Section-Flow.jpg"
+				}
+			},
+			"image_meta": {
+				"aperture": "0",
+				"credit": "",
+				"camera": "",
+				"caption": "",
+				"created_timestamp": "0",
+				"copyright": "",
+				"focal_length": "0",
+				"iso": "0",
+				"shutter_speed": "0",
+				"title": "",
+				"orientation": "0",
+				"keywords": [
+
+				]
+			}
+		},
+		"post": 2027,
+		"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/C-Nodes-Section-Flow.jpg",
+		"_links": {
+			"self": [
+				{
+					"href": "https://victorzambrano.com/wp-json/wp/v2/media/2485"
+				}
+			],
+			"collection": [
+				{
+					"href": "https://victorzambrano.com/wp-json/wp/v2/media"
+				}
+			],
+			"about": [
+				{
+					"href": "https://victorzambrano.com/wp-json/wp/v2/types/attachment"
+				}
+			],
+			"author": [
+				{
+					"embeddable": true,
+					"href": "https://victorzambrano.com/wp-json/wp/v2/users/2"
+				}
+			],
+			"replies": [
+				{
+					"embeddable": true,
+					"href": "https://victorzambrano.com/wp-json/wp/v2/comments?post=2485"
+				}
+			]
+		}
+	},
+	{
+		"id": 2484,
+		"date": "2017-07-24T02:26:06",
+		"date_gmt": "2017-07-24T02:26:06",
+		"guid": {
+			"rendered": "http://victorzambrano.com/wp-content/uploads/2016/10/B-Network-Dashboard-Flow.jpg"
+		},
+		"modified": "2017-07-24T02:26:06",
+		"modified_gmt": "2017-07-24T02:26:06",
+		"slug": "b-network-dashboard-flow",
+		"status": "inherit",
+		"type": "attachment",
+		"link": "https://victorzambrano.com/portfolio/cloud-wifi-management-apps/attachment/b-network-dashboard-flow/",
+		"title": {
+			"rendered": "B-Network-(Dashboard)-Flow"
+		},
+		"author": 2,
+		"comment_status": "closed",
+		"ping_status": "closed",
+		"template": "",
+		"meta": [
+
+		],
+		"description": {
+			"rendered": "<p class=\"attachment\"><a href='https://victorzambrano.com/wp-content/uploads/2016/10/B-Network-Dashboard-Flow.jpg'><img width=\"229\" height=\"300\" src=\"https://victorzambrano.com/wp-content/uploads/2016/10/B-Network-Dashboard-Flow-229x300.jpg\" class=\"attachment-medium size-medium\" alt=\"\" srcset=\"https://victorzambrano.com/wp-content/uploads/2016/10/B-Network-Dashboard-Flow-229x300.jpg 229w, https://victorzambrano.com/wp-content/uploads/2016/10/B-Network-Dashboard-Flow-768x1007.jpg 768w, https://victorzambrano.com/wp-content/uploads/2016/10/B-Network-Dashboard-Flow-781x1024.jpg 781w, https://victorzambrano.com/wp-content/uploads/2016/10/B-Network-Dashboard-Flow-380x498.jpg 380w\" sizes=\"(max-width: 229px) 100vw, 229px\" data-attachment-id=\"2484\" data-permalink=\"https://victorzambrano.com/portfolio/cloud-wifi-management-apps/attachment/b-network-dashboard-flow/\" data-orig-file=\"https://victorzambrano.com/wp-content/uploads/2016/10/B-Network-Dashboard-Flow.jpg\" data-orig-size=\"2963,3885\" data-comments-opened=\"0\" data-image-meta=\"{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}\" data-image-title=\"B-Network-(Dashboard)-Flow\" data-image-description=\"\" data-medium-file=\"https://victorzambrano.com/wp-content/uploads/2016/10/B-Network-Dashboard-Flow-229x300.jpg\" data-large-file=\"https://victorzambrano.com/wp-content/uploads/2016/10/B-Network-Dashboard-Flow-781x1024.jpg\" /></a></p>\n"
+		},
+		"caption": {
+			"rendered": ""
+		},
+		"alt_text": "",
+		"media_type": "image",
+		"mime_type": "image/jpeg",
+		"media_details": {
+			"width": 2963,
+			"height": 3885,
+			"file": "2016/10/B-Network-Dashboard-Flow.jpg",
+			"sizes": {
+				"thumbnail": {
+					"file": "B-Network-Dashboard-Flow-150x150.jpg",
+					"width": 150,
+					"height": 150,
+					"mime_type": "image/jpeg",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/B-Network-Dashboard-Flow-150x150.jpg"
+				},
+				"medium": {
+					"file": "B-Network-Dashboard-Flow-229x300.jpg",
+					"width": 229,
+					"height": 300,
+					"mime_type": "image/jpeg",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/B-Network-Dashboard-Flow-229x300.jpg"
+				},
+				"medium_large": {
+					"file": "B-Network-Dashboard-Flow-768x1007.jpg",
+					"width": 768,
+					"height": 1007,
+					"mime_type": "image/jpeg",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/B-Network-Dashboard-Flow-768x1007.jpg"
+				},
+				"large": {
+					"file": "B-Network-Dashboard-Flow-781x1024.jpg",
+					"width": 781,
+					"height": 1024,
+					"mime_type": "image/jpeg",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/B-Network-Dashboard-Flow-781x1024.jpg"
+				},
+				"post-thumbnail": {
+					"file": "B-Network-Dashboard-Flow-284x150.jpg",
+					"width": 284,
+					"height": 150,
+					"mime_type": "image/jpeg",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/B-Network-Dashboard-Flow-284x150.jpg"
+				},
+				"gallery_small": {
+					"file": "B-Network-Dashboard-Flow-380x498.jpg",
+					"width": 380,
+					"height": 498,
+					"mime_type": "image/jpeg",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/B-Network-Dashboard-Flow-380x498.jpg"
+				},
+				"feature_image": {
+					"file": "B-Network-Dashboard-Flow-1400x900.jpg",
+					"width": 1400,
+					"height": 900,
+					"mime_type": "image/jpeg",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/B-Network-Dashboard-Flow-1400x900.jpg"
+				},
+				"icon_size": {
+					"file": "B-Network-Dashboard-Flow-40x40.jpg",
+					"width": 40,
+					"height": 40,
+					"mime_type": "image/jpeg",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/B-Network-Dashboard-Flow-40x40.jpg"
+				},
+				"jetpack-portfolio-admin-thumb": {
+					"file": "B-Network-Dashboard-Flow-50x50.jpg",
+					"width": 50,
+					"height": 50,
+					"mime_type": "image/jpeg",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/B-Network-Dashboard-Flow-50x50.jpg"
+				},
+				"full": {
+					"file": "B-Network-Dashboard-Flow.jpg",
+					"width": 2963,
+					"height": 3885,
+					"mime_type": "image/jpeg",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/B-Network-Dashboard-Flow.jpg"
+				}
+			},
+			"image_meta": {
+				"aperture": "0",
+				"credit": "",
+				"camera": "",
+				"caption": "",
+				"created_timestamp": "0",
+				"copyright": "",
+				"focal_length": "0",
+				"iso": "0",
+				"shutter_speed": "0",
+				"title": "",
+				"orientation": "0",
+				"keywords": [
+
+				]
+			}
+		},
+		"post": 2027,
+		"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/B-Network-Dashboard-Flow.jpg",
+		"_links": {
+			"self": [
+				{
+					"href": "https://victorzambrano.com/wp-json/wp/v2/media/2484"
+				}
+			],
+			"collection": [
+				{
+					"href": "https://victorzambrano.com/wp-json/wp/v2/media"
+				}
+			],
+			"about": [
+				{
+					"href": "https://victorzambrano.com/wp-json/wp/v2/types/attachment"
+				}
+			],
+			"author": [
+				{
+					"embeddable": true,
+					"href": "https://victorzambrano.com/wp-json/wp/v2/users/2"
+				}
+			],
+			"replies": [
+				{
+					"embeddable": true,
+					"href": "https://victorzambrano.com/wp-json/wp/v2/comments?post=2484"
+				}
+			]
+		}
+	},
+	{
+		"id": 2483,
+		"date": "2017-07-24T02:26:03",
+		"date_gmt": "2017-07-24T02:26:03",
+		"guid": {
+			"rendered": "http://victorzambrano.com/wp-content/uploads/2016/10/A-Sign-In-Sign-up-Flow.jpg"
+		},
+		"modified": "2017-07-24T02:26:03",
+		"modified_gmt": "2017-07-24T02:26:03",
+		"slug": "a-sign-in-sign-up-flow",
+		"status": "inherit",
+		"type": "attachment",
+		"link": "https://victorzambrano.com/portfolio/cloud-wifi-management-apps/attachment/a-sign-in-sign-up-flow/",
+		"title": {
+			"rendered": "A-Sign-In-Sign-up-Flow"
+		},
+		"author": 2,
+		"comment_status": "closed",
+		"ping_status": "closed",
+		"template": "",
+		"meta": [
+
+		],
+		"description": {
+			"rendered": "<p class=\"attachment\"><a href='https://victorzambrano.com/wp-content/uploads/2016/10/A-Sign-In-Sign-up-Flow.jpg'><img width=\"300\" height=\"48\" src=\"https://victorzambrano.com/wp-content/uploads/2016/10/A-Sign-In-Sign-up-Flow-300x48.jpg\" class=\"attachment-medium size-medium\" alt=\"\" srcset=\"https://victorzambrano.com/wp-content/uploads/2016/10/A-Sign-In-Sign-up-Flow-300x48.jpg 300w, https://victorzambrano.com/wp-content/uploads/2016/10/A-Sign-In-Sign-up-Flow-768x122.jpg 768w, https://victorzambrano.com/wp-content/uploads/2016/10/A-Sign-In-Sign-up-Flow-1024x162.jpg 1024w, https://victorzambrano.com/wp-content/uploads/2016/10/A-Sign-In-Sign-up-Flow-380x60.jpg 380w\" sizes=\"(max-width: 300px) 100vw, 300px\" data-attachment-id=\"2483\" data-permalink=\"https://victorzambrano.com/portfolio/cloud-wifi-management-apps/attachment/a-sign-in-sign-up-flow/\" data-orig-file=\"https://victorzambrano.com/wp-content/uploads/2016/10/A-Sign-In-Sign-up-Flow.jpg\" data-orig-size=\"3022,479\" data-comments-opened=\"0\" data-image-meta=\"{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}\" data-image-title=\"A-Sign-In-Sign-up-Flow\" data-image-description=\"\" data-medium-file=\"https://victorzambrano.com/wp-content/uploads/2016/10/A-Sign-In-Sign-up-Flow-300x48.jpg\" data-large-file=\"https://victorzambrano.com/wp-content/uploads/2016/10/A-Sign-In-Sign-up-Flow-1024x162.jpg\" /></a></p>\n"
+		},
+		"caption": {
+			"rendered": ""
+		},
+		"alt_text": "",
+		"media_type": "image",
+		"mime_type": "image/jpeg",
+		"media_details": {
+			"width": 3022,
+			"height": 479,
+			"file": "2016/10/A-Sign-In-Sign-up-Flow.jpg",
+			"sizes": {
+				"thumbnail": {
+					"file": "A-Sign-In-Sign-up-Flow-150x150.jpg",
+					"width": 150,
+					"height": 150,
+					"mime_type": "image/jpeg",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/A-Sign-In-Sign-up-Flow-150x150.jpg"
+				},
+				"medium": {
+					"file": "A-Sign-In-Sign-up-Flow-300x48.jpg",
+					"width": 300,
+					"height": 48,
+					"mime_type": "image/jpeg",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/A-Sign-In-Sign-up-Flow-300x48.jpg"
+				},
+				"medium_large": {
+					"file": "A-Sign-In-Sign-up-Flow-768x122.jpg",
+					"width": 768,
+					"height": 122,
+					"mime_type": "image/jpeg",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/A-Sign-In-Sign-up-Flow-768x122.jpg"
+				},
+				"large": {
+					"file": "A-Sign-In-Sign-up-Flow-1024x162.jpg",
+					"width": 1024,
+					"height": 162,
+					"mime_type": "image/jpeg",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/A-Sign-In-Sign-up-Flow-1024x162.jpg"
+				},
+				"post-thumbnail": {
+					"file": "A-Sign-In-Sign-up-Flow-284x150.jpg",
+					"width": 284,
+					"height": 150,
+					"mime_type": "image/jpeg",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/A-Sign-In-Sign-up-Flow-284x150.jpg"
+				},
+				"gallery_small": {
+					"file": "A-Sign-In-Sign-up-Flow-380x60.jpg",
+					"width": 380,
+					"height": 60,
+					"mime_type": "image/jpeg",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/A-Sign-In-Sign-up-Flow-380x60.jpg"
+				},
+				"feature_image": {
+					"file": "A-Sign-In-Sign-up-Flow-1400x479.jpg",
+					"width": 1400,
+					"height": 479,
+					"mime_type": "image/jpeg",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/A-Sign-In-Sign-up-Flow-1400x479.jpg"
+				},
+				"icon_size": {
+					"file": "A-Sign-In-Sign-up-Flow-40x40.jpg",
+					"width": 40,
+					"height": 40,
+					"mime_type": "image/jpeg",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/A-Sign-In-Sign-up-Flow-40x40.jpg"
+				},
+				"jetpack-portfolio-admin-thumb": {
+					"file": "A-Sign-In-Sign-up-Flow-50x50.jpg",
+					"width": 50,
+					"height": 50,
+					"mime_type": "image/jpeg",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/A-Sign-In-Sign-up-Flow-50x50.jpg"
+				},
+				"full": {
+					"file": "A-Sign-In-Sign-up-Flow.jpg",
+					"width": 3022,
+					"height": 479,
+					"mime_type": "image/jpeg",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/A-Sign-In-Sign-up-Flow.jpg"
+				}
+			},
+			"image_meta": {
+				"aperture": "0",
+				"credit": "",
+				"camera": "",
+				"caption": "",
+				"created_timestamp": "0",
+				"copyright": "",
+				"focal_length": "0",
+				"iso": "0",
+				"shutter_speed": "0",
+				"title": "",
+				"orientation": "0",
+				"keywords": [
+
+				]
+			}
+		},
+		"post": 2027,
+		"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/A-Sign-In-Sign-up-Flow.jpg",
+		"_links": {
+			"self": [
+				{
+					"href": "https://victorzambrano.com/wp-json/wp/v2/media/2483"
+				}
+			],
+			"collection": [
+				{
+					"href": "https://victorzambrano.com/wp-json/wp/v2/media"
+				}
+			],
+			"about": [
+				{
+					"href": "https://victorzambrano.com/wp-json/wp/v2/types/attachment"
+				}
+			],
+			"author": [
+				{
+					"embeddable": true,
+					"href": "https://victorzambrano.com/wp-json/wp/v2/users/2"
+				}
+			],
+			"replies": [
+				{
+					"embeddable": true,
+					"href": "https://victorzambrano.com/wp-json/wp/v2/comments?post=2483"
+				}
+			]
+		}
+	},
+	{
+		"id": 2439,
+		"date": "2017-07-23T07:08:39",
+		"date_gmt": "2017-07-23T07:08:39",
+		"guid": {
+			"rendered": "http://victorzambrano.com/wp-content/uploads/2016/10/xcode-proto-03.png"
+		},
+		"modified": "2017-07-23T07:08:39",
+		"modified_gmt": "2017-07-23T07:08:39",
+		"slug": "xcode-proto-03",
+		"status": "inherit",
+		"type": "attachment",
+		"link": "https://victorzambrano.com/portfolio/cloud-wifi-management-apps/attachment/xcode-proto-03/",
+		"title": {
+			"rendered": "xcode-proto-03"
+		},
+		"author": 2,
+		"comment_status": "closed",
+		"ping_status": "closed",
+		"template": "",
+		"meta": [
+
+		],
+		"description": {
+			"rendered": "<p class=\"attachment\"><a href='https://victorzambrano.com/wp-content/uploads/2016/10/xcode-proto-03.png'><img width=\"300\" height=\"204\" src=\"https://victorzambrano.com/wp-content/uploads/2016/10/xcode-proto-03-300x204.png\" class=\"attachment-medium size-medium\" alt=\"\" srcset=\"https://victorzambrano.com/wp-content/uploads/2016/10/xcode-proto-03-300x204.png 300w, https://victorzambrano.com/wp-content/uploads/2016/10/xcode-proto-03-768x522.png 768w, https://victorzambrano.com/wp-content/uploads/2016/10/xcode-proto-03-1024x697.png 1024w, https://victorzambrano.com/wp-content/uploads/2016/10/xcode-proto-03-380x258.png 380w\" sizes=\"(max-width: 300px) 100vw, 300px\" data-attachment-id=\"2439\" data-permalink=\"https://victorzambrano.com/portfolio/cloud-wifi-management-apps/attachment/xcode-proto-03/\" data-orig-file=\"https://victorzambrano.com/wp-content/uploads/2016/10/xcode-proto-03.png\" data-orig-size=\"4009,2727\" data-comments-opened=\"0\" data-image-meta=\"{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}\" data-image-title=\"xcode-proto-03\" data-image-description=\"\" data-medium-file=\"https://victorzambrano.com/wp-content/uploads/2016/10/xcode-proto-03-300x204.png\" data-large-file=\"https://victorzambrano.com/wp-content/uploads/2016/10/xcode-proto-03-1024x697.png\" /></a></p>\n"
+		},
+		"caption": {
+			"rendered": ""
+		},
+		"alt_text": "",
+		"media_type": "image",
+		"mime_type": "image/png",
+		"media_details": {
+			"width": 4009,
+			"height": 2727,
+			"file": "2016/10/xcode-proto-03.png",
+			"sizes": {
+				"thumbnail": {
+					"file": "xcode-proto-03-150x150.png",
+					"width": 150,
+					"height": 150,
+					"mime_type": "image/png",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/xcode-proto-03-150x150.png"
+				},
+				"medium": {
+					"file": "xcode-proto-03-300x204.png",
+					"width": 300,
+					"height": 204,
+					"mime_type": "image/png",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/xcode-proto-03-300x204.png"
+				},
+				"medium_large": {
+					"file": "xcode-proto-03-768x522.png",
+					"width": 768,
+					"height": 522,
+					"mime_type": "image/png",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/xcode-proto-03-768x522.png"
+				},
+				"large": {
+					"file": "xcode-proto-03-1024x697.png",
+					"width": 1024,
+					"height": 697,
+					"mime_type": "image/png",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/xcode-proto-03-1024x697.png"
+				},
+				"post-thumbnail": {
+					"file": "xcode-proto-03-284x150.png",
+					"width": 284,
+					"height": 150,
+					"mime_type": "image/png",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/xcode-proto-03-284x150.png"
+				},
+				"gallery_small": {
+					"file": "xcode-proto-03-380x258.png",
+					"width": 380,
+					"height": 258,
+					"mime_type": "image/png",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/xcode-proto-03-380x258.png"
+				},
+				"feature_image": {
+					"file": "xcode-proto-03-1400x900.png",
+					"width": 1400,
+					"height": 900,
+					"mime_type": "image/png",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/xcode-proto-03-1400x900.png"
+				},
+				"icon_size": {
+					"file": "xcode-proto-03-40x40.png",
+					"width": 40,
+					"height": 40,
+					"mime_type": "image/png",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/xcode-proto-03-40x40.png"
+				},
+				"jetpack-portfolio-admin-thumb": {
+					"file": "xcode-proto-03-50x50.png",
+					"width": 50,
+					"height": 50,
+					"mime_type": "image/png",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/xcode-proto-03-50x50.png"
+				},
+				"full": {
+					"file": "xcode-proto-03.png",
+					"width": 4009,
+					"height": 2727,
+					"mime_type": "image/png",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/xcode-proto-03.png"
+				}
+			},
+			"image_meta": {
+				"aperture": "0",
+				"credit": "",
+				"camera": "",
+				"caption": "",
+				"created_timestamp": "0",
+				"copyright": "",
+				"focal_length": "0",
+				"iso": "0",
+				"shutter_speed": "0",
+				"title": "",
+				"orientation": "0",
+				"keywords": [
+
+				]
+			}
+		},
+		"post": 2027,
+		"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/xcode-proto-03.png",
+		"_links": {
+			"self": [
+				{
+					"href": "https://victorzambrano.com/wp-json/wp/v2/media/2439"
+				}
+			],
+			"collection": [
+				{
+					"href": "https://victorzambrano.com/wp-json/wp/v2/media"
+				}
+			],
+			"about": [
+				{
+					"href": "https://victorzambrano.com/wp-json/wp/v2/types/attachment"
+				}
+			],
+			"author": [
+				{
+					"embeddable": true,
+					"href": "https://victorzambrano.com/wp-json/wp/v2/users/2"
+				}
+			],
+			"replies": [
+				{
+					"embeddable": true,
+					"href": "https://victorzambrano.com/wp-json/wp/v2/comments?post=2439"
+				}
+			]
+		}
+	},
+	{
+		"id": 2438,
+		"date": "2017-07-23T07:08:29",
+		"date_gmt": "2017-07-23T07:08:29",
+		"guid": {
+			"rendered": "http://victorzambrano.com/wp-content/uploads/2016/10/xcode-proto-02.png"
+		},
+		"modified": "2017-07-23T07:08:29",
+		"modified_gmt": "2017-07-23T07:08:29",
+		"slug": "xcode-proto-02",
+		"status": "inherit",
+		"type": "attachment",
+		"link": "https://victorzambrano.com/portfolio/cloud-wifi-management-apps/attachment/xcode-proto-02/",
+		"title": {
+			"rendered": "xcode-proto-02"
+		},
+		"author": 2,
+		"comment_status": "closed",
+		"ping_status": "closed",
+		"template": "",
+		"meta": [
+
+		],
+		"description": {
+			"rendered": "<p class=\"attachment\"><a href='https://victorzambrano.com/wp-content/uploads/2016/10/xcode-proto-02.png'><img width=\"300\" height=\"240\" src=\"https://victorzambrano.com/wp-content/uploads/2016/10/xcode-proto-02-300x240.png\" class=\"attachment-medium size-medium\" alt=\"\" srcset=\"https://victorzambrano.com/wp-content/uploads/2016/10/xcode-proto-02-300x240.png 300w, https://victorzambrano.com/wp-content/uploads/2016/10/xcode-proto-02-768x614.png 768w, https://victorzambrano.com/wp-content/uploads/2016/10/xcode-proto-02-1024x818.png 1024w, https://victorzambrano.com/wp-content/uploads/2016/10/xcode-proto-02-380x304.png 380w\" sizes=\"(max-width: 300px) 100vw, 300px\" data-attachment-id=\"2438\" data-permalink=\"https://victorzambrano.com/portfolio/cloud-wifi-management-apps/attachment/xcode-proto-02/\" data-orig-file=\"https://victorzambrano.com/wp-content/uploads/2016/10/xcode-proto-02.png\" data-orig-size=\"3414,2728\" data-comments-opened=\"0\" data-image-meta=\"{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}\" data-image-title=\"xcode-proto-02\" data-image-description=\"\" data-medium-file=\"https://victorzambrano.com/wp-content/uploads/2016/10/xcode-proto-02-300x240.png\" data-large-file=\"https://victorzambrano.com/wp-content/uploads/2016/10/xcode-proto-02-1024x818.png\" /></a></p>\n"
+		},
+		"caption": {
+			"rendered": ""
+		},
+		"alt_text": "",
+		"media_type": "image",
+		"mime_type": "image/png",
+		"media_details": {
+			"width": 3414,
+			"height": 2728,
+			"file": "2016/10/xcode-proto-02.png",
+			"sizes": {
+				"thumbnail": {
+					"file": "xcode-proto-02-150x150.png",
+					"width": 150,
+					"height": 150,
+					"mime_type": "image/png",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/xcode-proto-02-150x150.png"
+				},
+				"medium": {
+					"file": "xcode-proto-02-300x240.png",
+					"width": 300,
+					"height": 240,
+					"mime_type": "image/png",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/xcode-proto-02-300x240.png"
+				},
+				"medium_large": {
+					"file": "xcode-proto-02-768x614.png",
+					"width": 768,
+					"height": 614,
+					"mime_type": "image/png",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/xcode-proto-02-768x614.png"
+				},
+				"large": {
+					"file": "xcode-proto-02-1024x818.png",
+					"width": 1024,
+					"height": 818,
+					"mime_type": "image/png",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/xcode-proto-02-1024x818.png"
+				},
+				"post-thumbnail": {
+					"file": "xcode-proto-02-284x150.png",
+					"width": 284,
+					"height": 150,
+					"mime_type": "image/png",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/xcode-proto-02-284x150.png"
+				},
+				"gallery_small": {
+					"file": "xcode-proto-02-380x304.png",
+					"width": 380,
+					"height": 304,
+					"mime_type": "image/png",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/xcode-proto-02-380x304.png"
+				},
+				"feature_image": {
+					"file": "xcode-proto-02-1400x900.png",
+					"width": 1400,
+					"height": 900,
+					"mime_type": "image/png",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/xcode-proto-02-1400x900.png"
+				},
+				"icon_size": {
+					"file": "xcode-proto-02-40x40.png",
+					"width": 40,
+					"height": 40,
+					"mime_type": "image/png",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/xcode-proto-02-40x40.png"
+				},
+				"jetpack-portfolio-admin-thumb": {
+					"file": "xcode-proto-02-50x50.png",
+					"width": 50,
+					"height": 50,
+					"mime_type": "image/png",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/xcode-proto-02-50x50.png"
+				},
+				"full": {
+					"file": "xcode-proto-02.png",
+					"width": 3414,
+					"height": 2728,
+					"mime_type": "image/png",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/xcode-proto-02.png"
+				}
+			},
+			"image_meta": {
+				"aperture": "0",
+				"credit": "",
+				"camera": "",
+				"caption": "",
+				"created_timestamp": "0",
+				"copyright": "",
+				"focal_length": "0",
+				"iso": "0",
+				"shutter_speed": "0",
+				"title": "",
+				"orientation": "0",
+				"keywords": [
+
+				]
+			}
+		},
+		"post": 2027,
+		"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/xcode-proto-02.png",
+		"_links": {
+			"self": [
+				{
+					"href": "https://victorzambrano.com/wp-json/wp/v2/media/2438"
+				}
+			],
+			"collection": [
+				{
+					"href": "https://victorzambrano.com/wp-json/wp/v2/media"
+				}
+			],
+			"about": [
+				{
+					"href": "https://victorzambrano.com/wp-json/wp/v2/types/attachment"
+				}
+			],
+			"author": [
+				{
+					"embeddable": true,
+					"href": "https://victorzambrano.com/wp-json/wp/v2/users/2"
+				}
+			],
+			"replies": [
+				{
+					"embeddable": true,
+					"href": "https://victorzambrano.com/wp-json/wp/v2/comments?post=2438"
+				}
+			]
+		}
+	},
+	{
+		"id": 2437,
+		"date": "2017-07-23T07:08:22",
+		"date_gmt": "2017-07-23T07:08:22",
+		"guid": {
+			"rendered": "http://victorzambrano.com/wp-content/uploads/2016/10/xcode-proto-01.png"
+		},
+		"modified": "2017-07-23T07:08:22",
+		"modified_gmt": "2017-07-23T07:08:22",
+		"slug": "xcode-proto-01",
+		"status": "inherit",
+		"type": "attachment",
+		"link": "https://victorzambrano.com/portfolio/cloud-wifi-management-apps/attachment/xcode-proto-01/",
+		"title": {
+			"rendered": "xcode-proto-01"
+		},
+		"author": 2,
+		"comment_status": "closed",
+		"ping_status": "closed",
+		"template": "",
+		"meta": [
+
+		],
+		"description": {
+			"rendered": "<p class=\"attachment\"><a href='https://victorzambrano.com/wp-content/uploads/2016/10/xcode-proto-01.png'><img width=\"300\" height=\"201\" src=\"https://victorzambrano.com/wp-content/uploads/2016/10/xcode-proto-01-300x201.png\" class=\"attachment-medium size-medium\" alt=\"\" srcset=\"https://victorzambrano.com/wp-content/uploads/2016/10/xcode-proto-01-300x201.png 300w, https://victorzambrano.com/wp-content/uploads/2016/10/xcode-proto-01-768x513.png 768w, https://victorzambrano.com/wp-content/uploads/2016/10/xcode-proto-01-1024x685.png 1024w, https://victorzambrano.com/wp-content/uploads/2016/10/xcode-proto-01-380x254.png 380w\" sizes=\"(max-width: 300px) 100vw, 300px\" data-attachment-id=\"2437\" data-permalink=\"https://victorzambrano.com/portfolio/cloud-wifi-management-apps/attachment/xcode-proto-01/\" data-orig-file=\"https://victorzambrano.com/wp-content/uploads/2016/10/xcode-proto-01.png\" data-orig-size=\"2800,1872\" data-comments-opened=\"0\" data-image-meta=\"{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}\" data-image-title=\"xcode-proto-01\" data-image-description=\"\" data-medium-file=\"https://victorzambrano.com/wp-content/uploads/2016/10/xcode-proto-01-300x201.png\" data-large-file=\"https://victorzambrano.com/wp-content/uploads/2016/10/xcode-proto-01-1024x685.png\" /></a></p>\n"
+		},
+		"caption": {
+			"rendered": ""
+		},
+		"alt_text": "",
+		"media_type": "image",
+		"mime_type": "image/png",
+		"media_details": {
+			"width": 2800,
+			"height": 1872,
+			"file": "2016/10/xcode-proto-01.png",
+			"sizes": {
+				"thumbnail": {
+					"file": "xcode-proto-01-150x150.png",
+					"width": 150,
+					"height": 150,
+					"mime_type": "image/png",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/xcode-proto-01-150x150.png"
+				},
+				"medium": {
+					"file": "xcode-proto-01-300x201.png",
+					"width": 300,
+					"height": 201,
+					"mime_type": "image/png",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/xcode-proto-01-300x201.png"
+				},
+				"medium_large": {
+					"file": "xcode-proto-01-768x513.png",
+					"width": 768,
+					"height": 513,
+					"mime_type": "image/png",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/xcode-proto-01-768x513.png"
+				},
+				"large": {
+					"file": "xcode-proto-01-1024x685.png",
+					"width": 1024,
+					"height": 685,
+					"mime_type": "image/png",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/xcode-proto-01-1024x685.png"
+				},
+				"post-thumbnail": {
+					"file": "xcode-proto-01-284x150.png",
+					"width": 284,
+					"height": 150,
+					"mime_type": "image/png",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/xcode-proto-01-284x150.png"
+				},
+				"gallery_small": {
+					"file": "xcode-proto-01-380x254.png",
+					"width": 380,
+					"height": 254,
+					"mime_type": "image/png",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/xcode-proto-01-380x254.png"
+				},
+				"feature_image": {
+					"file": "xcode-proto-01-1400x900.png",
+					"width": 1400,
+					"height": 900,
+					"mime_type": "image/png",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/xcode-proto-01-1400x900.png"
+				},
+				"icon_size": {
+					"file": "xcode-proto-01-40x40.png",
+					"width": 40,
+					"height": 40,
+					"mime_type": "image/png",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/xcode-proto-01-40x40.png"
+				},
+				"jetpack-portfolio-admin-thumb": {
+					"file": "xcode-proto-01-50x50.png",
+					"width": 50,
+					"height": 50,
+					"mime_type": "image/png",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/xcode-proto-01-50x50.png"
+				},
+				"full": {
+					"file": "xcode-proto-01.png",
+					"width": 2800,
+					"height": 1872,
+					"mime_type": "image/png",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/xcode-proto-01.png"
+				}
+			},
+			"image_meta": {
+				"aperture": "0",
+				"credit": "",
+				"camera": "",
+				"caption": "",
+				"created_timestamp": "0",
+				"copyright": "",
+				"focal_length": "0",
+				"iso": "0",
+				"shutter_speed": "0",
+				"title": "",
+				"orientation": "0",
+				"keywords": [
+
+				]
+			}
+		},
+		"post": 2027,
+		"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/xcode-proto-01.png",
+		"_links": {
+			"self": [
+				{
+					"href": "https://victorzambrano.com/wp-json/wp/v2/media/2437"
+				}
+			],
+			"collection": [
+				{
+					"href": "https://victorzambrano.com/wp-json/wp/v2/media"
+				}
+			],
+			"about": [
+				{
+					"href": "https://victorzambrano.com/wp-json/wp/v2/types/attachment"
+				}
+			],
+			"author": [
+				{
+					"embeddable": true,
+					"href": "https://victorzambrano.com/wp-json/wp/v2/users/2"
+				}
+			],
+			"replies": [
+				{
+					"embeddable": true,
+					"href": "https://victorzambrano.com/wp-json/wp/v2/comments?post=2437"
+				}
+			]
+		}
+	},
+	{
+		"id": 2436,
+		"date": "2017-07-23T06:51:20",
+		"date_gmt": "2017-07-23T06:51:20",
+		"guid": {
+			"rendered": "http://victorzambrano.com/wp-content/uploads/2016/10/proto-axure-08-settings.png"
+		},
+		"modified": "2017-07-23T06:51:20",
+		"modified_gmt": "2017-07-23T06:51:20",
+		"slug": "proto-axure-08-settings",
+		"status": "inherit",
+		"type": "attachment",
+		"link": "https://victorzambrano.com/portfolio/cloud-wifi-management-apps/attachment/proto-axure-08-settings/",
+		"title": {
+			"rendered": "proto-axure-08-settings"
+		},
+		"author": 2,
+		"comment_status": "closed",
+		"ping_status": "closed",
+		"template": "",
+		"meta": [
+
+		],
+		"description": {
+			"rendered": "<p class=\"attachment\"><a href='https://victorzambrano.com/wp-content/uploads/2016/10/proto-axure-08-settings.png'><img width=\"300\" height=\"295\" src=\"https://victorzambrano.com/wp-content/uploads/2016/10/proto-axure-08-settings-300x295.png\" class=\"attachment-medium size-medium\" alt=\"\" srcset=\"https://victorzambrano.com/wp-content/uploads/2016/10/proto-axure-08-settings-300x295.png 300w, https://victorzambrano.com/wp-content/uploads/2016/10/proto-axure-08-settings-768x756.png 768w, https://victorzambrano.com/wp-content/uploads/2016/10/proto-axure-08-settings-1024x1007.png 1024w, https://victorzambrano.com/wp-content/uploads/2016/10/proto-axure-08-settings-380x374.png 380w, https://victorzambrano.com/wp-content/uploads/2016/10/proto-axure-08-settings-40x40.png 40w, https://victorzambrano.com/wp-content/uploads/2016/10/proto-axure-08-settings-50x50.png 50w\" sizes=\"(max-width: 300px) 100vw, 300px\" data-attachment-id=\"2436\" data-permalink=\"https://victorzambrano.com/portfolio/cloud-wifi-management-apps/attachment/proto-axure-08-settings/\" data-orig-file=\"https://victorzambrano.com/wp-content/uploads/2016/10/proto-axure-08-settings.png\" data-orig-size=\"2476,2436\" data-comments-opened=\"0\" data-image-meta=\"{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}\" data-image-title=\"proto-axure-08-settings\" data-image-description=\"\" data-medium-file=\"https://victorzambrano.com/wp-content/uploads/2016/10/proto-axure-08-settings-300x295.png\" data-large-file=\"https://victorzambrano.com/wp-content/uploads/2016/10/proto-axure-08-settings-1024x1007.png\" /></a></p>\n"
+		},
+		"caption": {
+			"rendered": ""
+		},
+		"alt_text": "",
+		"media_type": "image",
+		"mime_type": "image/png",
+		"media_details": {
+			"width": 2476,
+			"height": 2436,
+			"file": "2016/10/proto-axure-08-settings.png",
+			"sizes": {
+				"thumbnail": {
+					"file": "proto-axure-08-settings-150x150.png",
+					"width": 150,
+					"height": 150,
+					"mime_type": "image/png",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/proto-axure-08-settings-150x150.png"
+				},
+				"medium": {
+					"file": "proto-axure-08-settings-300x295.png",
+					"width": 300,
+					"height": 295,
+					"mime_type": "image/png",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/proto-axure-08-settings-300x295.png"
+				},
+				"medium_large": {
+					"file": "proto-axure-08-settings-768x756.png",
+					"width": 768,
+					"height": 756,
+					"mime_type": "image/png",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/proto-axure-08-settings-768x756.png"
+				},
+				"large": {
+					"file": "proto-axure-08-settings-1024x1007.png",
+					"width": 1024,
+					"height": 1007,
+					"mime_type": "image/png",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/proto-axure-08-settings-1024x1007.png"
+				},
+				"post-thumbnail": {
+					"file": "proto-axure-08-settings-284x150.png",
+					"width": 284,
+					"height": 150,
+					"mime_type": "image/png",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/proto-axure-08-settings-284x150.png"
+				},
+				"gallery_small": {
+					"file": "proto-axure-08-settings-380x374.png",
+					"width": 380,
+					"height": 374,
+					"mime_type": "image/png",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/proto-axure-08-settings-380x374.png"
+				},
+				"feature_image": {
+					"file": "proto-axure-08-settings-1400x900.png",
+					"width": 1400,
+					"height": 900,
+					"mime_type": "image/png",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/proto-axure-08-settings-1400x900.png"
+				},
+				"icon_size": {
+					"file": "proto-axure-08-settings-40x40.png",
+					"width": 40,
+					"height": 40,
+					"mime_type": "image/png",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/proto-axure-08-settings-40x40.png"
+				},
+				"jetpack-portfolio-admin-thumb": {
+					"file": "proto-axure-08-settings-50x50.png",
+					"width": 50,
+					"height": 50,
+					"mime_type": "image/png",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/proto-axure-08-settings-50x50.png"
+				},
+				"full": {
+					"file": "proto-axure-08-settings.png",
+					"width": 2476,
+					"height": 2436,
+					"mime_type": "image/png",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/proto-axure-08-settings.png"
+				}
+			},
+			"image_meta": {
+				"aperture": "0",
+				"credit": "",
+				"camera": "",
+				"caption": "",
+				"created_timestamp": "0",
+				"copyright": "",
+				"focal_length": "0",
+				"iso": "0",
+				"shutter_speed": "0",
+				"title": "",
+				"orientation": "0",
+				"keywords": [
+
+				]
+			}
+		},
+		"post": 2027,
+		"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/proto-axure-08-settings.png",
+		"_links": {
+			"self": [
+				{
+					"href": "https://victorzambrano.com/wp-json/wp/v2/media/2436"
+				}
+			],
+			"collection": [
+				{
+					"href": "https://victorzambrano.com/wp-json/wp/v2/media"
+				}
+			],
+			"about": [
+				{
+					"href": "https://victorzambrano.com/wp-json/wp/v2/types/attachment"
+				}
+			],
+			"author": [
+				{
+					"embeddable": true,
+					"href": "https://victorzambrano.com/wp-json/wp/v2/users/2"
+				}
+			],
+			"replies": [
+				{
+					"embeddable": true,
+					"href": "https://victorzambrano.com/wp-json/wp/v2/comments?post=2436"
+				}
+			]
+		}
+	},
+	{
+		"id": 2435,
+		"date": "2017-07-23T06:51:15",
+		"date_gmt": "2017-07-23T06:51:15",
+		"guid": {
+			"rendered": "http://victorzambrano.com/wp-content/uploads/2016/10/proto-axure-07-invited.png"
+		},
+		"modified": "2017-07-23T06:51:15",
+		"modified_gmt": "2017-07-23T06:51:15",
+		"slug": "proto-axure-07-invited",
+		"status": "inherit",
+		"type": "attachment",
+		"link": "https://victorzambrano.com/portfolio/cloud-wifi-management-apps/attachment/proto-axure-07-invited/",
+		"title": {
+			"rendered": "proto-axure-07-invited"
+		},
+		"author": 2,
+		"comment_status": "closed",
+		"ping_status": "closed",
+		"template": "",
+		"meta": [
+
+		],
+		"description": {
+			"rendered": "<p class=\"attachment\"><a href='https://victorzambrano.com/wp-content/uploads/2016/10/proto-axure-07-invited.png'><img width=\"300\" height=\"295\" src=\"https://victorzambrano.com/wp-content/uploads/2016/10/proto-axure-07-invited-300x295.png\" class=\"attachment-medium size-medium\" alt=\"\" srcset=\"https://victorzambrano.com/wp-content/uploads/2016/10/proto-axure-07-invited-300x295.png 300w, https://victorzambrano.com/wp-content/uploads/2016/10/proto-axure-07-invited-768x756.png 768w, https://victorzambrano.com/wp-content/uploads/2016/10/proto-axure-07-invited-1024x1007.png 1024w, https://victorzambrano.com/wp-content/uploads/2016/10/proto-axure-07-invited-380x374.png 380w, https://victorzambrano.com/wp-content/uploads/2016/10/proto-axure-07-invited-40x40.png 40w, https://victorzambrano.com/wp-content/uploads/2016/10/proto-axure-07-invited-50x50.png 50w\" sizes=\"(max-width: 300px) 100vw, 300px\" data-attachment-id=\"2435\" data-permalink=\"https://victorzambrano.com/portfolio/cloud-wifi-management-apps/attachment/proto-axure-07-invited/\" data-orig-file=\"https://victorzambrano.com/wp-content/uploads/2016/10/proto-axure-07-invited.png\" data-orig-size=\"2476,2436\" data-comments-opened=\"0\" data-image-meta=\"{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}\" data-image-title=\"proto-axure-07-invited\" data-image-description=\"\" data-medium-file=\"https://victorzambrano.com/wp-content/uploads/2016/10/proto-axure-07-invited-300x295.png\" data-large-file=\"https://victorzambrano.com/wp-content/uploads/2016/10/proto-axure-07-invited-1024x1007.png\" /></a></p>\n"
+		},
+		"caption": {
+			"rendered": ""
+		},
+		"alt_text": "",
+		"media_type": "image",
+		"mime_type": "image/png",
+		"media_details": {
+			"width": 2476,
+			"height": 2436,
+			"file": "2016/10/proto-axure-07-invited.png",
+			"sizes": {
+				"thumbnail": {
+					"file": "proto-axure-07-invited-150x150.png",
+					"width": 150,
+					"height": 150,
+					"mime_type": "image/png",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/proto-axure-07-invited-150x150.png"
+				},
+				"medium": {
+					"file": "proto-axure-07-invited-300x295.png",
+					"width": 300,
+					"height": 295,
+					"mime_type": "image/png",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/proto-axure-07-invited-300x295.png"
+				},
+				"medium_large": {
+					"file": "proto-axure-07-invited-768x756.png",
+					"width": 768,
+					"height": 756,
+					"mime_type": "image/png",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/proto-axure-07-invited-768x756.png"
+				},
+				"large": {
+					"file": "proto-axure-07-invited-1024x1007.png",
+					"width": 1024,
+					"height": 1007,
+					"mime_type": "image/png",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/proto-axure-07-invited-1024x1007.png"
+				},
+				"post-thumbnail": {
+					"file": "proto-axure-07-invited-284x150.png",
+					"width": 284,
+					"height": 150,
+					"mime_type": "image/png",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/proto-axure-07-invited-284x150.png"
+				},
+				"gallery_small": {
+					"file": "proto-axure-07-invited-380x374.png",
+					"width": 380,
+					"height": 374,
+					"mime_type": "image/png",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/proto-axure-07-invited-380x374.png"
+				},
+				"feature_image": {
+					"file": "proto-axure-07-invited-1400x900.png",
+					"width": 1400,
+					"height": 900,
+					"mime_type": "image/png",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/proto-axure-07-invited-1400x900.png"
+				},
+				"icon_size": {
+					"file": "proto-axure-07-invited-40x40.png",
+					"width": 40,
+					"height": 40,
+					"mime_type": "image/png",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/proto-axure-07-invited-40x40.png"
+				},
+				"jetpack-portfolio-admin-thumb": {
+					"file": "proto-axure-07-invited-50x50.png",
+					"width": 50,
+					"height": 50,
+					"mime_type": "image/png",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/proto-axure-07-invited-50x50.png"
+				},
+				"full": {
+					"file": "proto-axure-07-invited.png",
+					"width": 2476,
+					"height": 2436,
+					"mime_type": "image/png",
+					"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/proto-axure-07-invited.png"
+				}
+			},
+			"image_meta": {
+				"aperture": "0",
+				"credit": "",
+				"camera": "",
+				"caption": "",
+				"created_timestamp": "0",
+				"copyright": "",
+				"focal_length": "0",
+				"iso": "0",
+				"shutter_speed": "0",
+				"title": "",
+				"orientation": "0",
+				"keywords": [
+
+				]
+			}
+		},
+		"post": 2027,
+		"source_url": "https://victorzambrano.com/wp-content/uploads/2016/10/proto-axure-07-invited.png",
+		"_links": {
+			"self": [
+				{
+					"href": "https://victorzambrano.com/wp-json/wp/v2/media/2435"
+				}
+			],
+			"collection": [
+				{
+					"href": "https://victorzambrano.com/wp-json/wp/v2/media"
+				}
+			],
+			"about": [
+				{
+					"href": "https://victorzambrano.com/wp-json/wp/v2/types/attachment"
+				}
+			],
+			"author": [
+				{
+					"embeddable": true,
+					"href": "https://victorzambrano.com/wp-json/wp/v2/users/2"
+				}
+			],
+			"replies": [
+				{
+					"embeddable": true,
+					"href": "https://victorzambrano.com/wp-json/wp/v2/comments?post=2435"
+				}
+			]
+		}
+	}
+]

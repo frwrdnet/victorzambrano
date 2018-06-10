@@ -1,0 +1,157 @@
+{
+	"id": 2298,
+	"date": "2017-05-05T21:43:19",
+	"date_gmt": "2017-05-05T21:43:19",
+	"guid": {
+		"rendered": "http://victorzambrano.com/wp-content/uploads/2017/05/00-cloudmondo-all-featured.jpg"
+	},
+	"modified": "2017-05-05T21:43:19",
+	"modified_gmt": "2017-05-05T21:43:19",
+	"slug": "00-cloudmondo-all-featured",
+	"status": "inherit",
+	"type": "attachment",
+	"link": "https://victorzambrano.com/00-cloudmondo-all-featured/",
+	"title": {
+		"rendered": "00-cloudmondo-all-featured"
+	},
+	"author": 2,
+	"comment_status": "open",
+	"ping_status": "closed",
+	"template": "",
+	"meta": [
+
+	],
+	"description": {
+		"rendered": "<p class=\"attachment\"><a href='https://victorzambrano.com/wp-content/uploads/2017/05/00-cloudmondo-all-featured.jpg'><img width=\"300\" height=\"180\" src=\"https://victorzambrano.com/wp-content/uploads/2017/05/00-cloudmondo-all-featured-300x180.jpg\" class=\"attachment-medium size-medium\" alt=\"\" srcset=\"https://victorzambrano.com/wp-content/uploads/2017/05/00-cloudmondo-all-featured-300x180.jpg 300w, https://victorzambrano.com/wp-content/uploads/2017/05/00-cloudmondo-all-featured-768x461.jpg 768w, https://victorzambrano.com/wp-content/uploads/2017/05/00-cloudmondo-all-featured-1024x614.jpg 1024w, https://victorzambrano.com/wp-content/uploads/2017/05/00-cloudmondo-all-featured-380x228.jpg 380w\" sizes=\"(max-width: 300px) 100vw, 300px\" data-attachment-id=\"2298\" data-permalink=\"https://victorzambrano.com/00-cloudmondo-all-featured/\" data-orig-file=\"https://victorzambrano.com/wp-content/uploads/2017/05/00-cloudmondo-all-featured.jpg\" data-orig-size=\"2500,1500\" data-comments-opened=\"1\" data-image-meta=\"{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}\" data-image-title=\"00-cloudmondo-all-featured\" data-image-description=\"\" data-medium-file=\"https://victorzambrano.com/wp-content/uploads/2017/05/00-cloudmondo-all-featured-300x180.jpg\" data-large-file=\"https://victorzambrano.com/wp-content/uploads/2017/05/00-cloudmondo-all-featured-1024x614.jpg\" /></a></p>\n"
+	},
+	"caption": {
+		"rendered": ""
+	},
+	"alt_text": "",
+	"media_type": "image",
+	"mime_type": "image/jpeg",
+	"media_details": {
+		"width": 2500,
+		"height": 1500,
+		"file": "2017/05/00-cloudmondo-all-featured.jpg",
+		"sizes": {
+			"thumbnail": {
+				"file": "00-cloudmondo-all-featured-150x150.jpg",
+				"width": 150,
+				"height": 150,
+				"mime_type": "image/jpeg",
+				"source_url": "https://victorzambrano.com/wp-content/uploads/2017/05/00-cloudmondo-all-featured-150x150.jpg"
+			},
+			"medium": {
+				"file": "00-cloudmondo-all-featured-300x180.jpg",
+				"width": 300,
+				"height": 180,
+				"mime_type": "image/jpeg",
+				"source_url": "https://victorzambrano.com/wp-content/uploads/2017/05/00-cloudmondo-all-featured-300x180.jpg"
+			},
+			"medium_large": {
+				"file": "00-cloudmondo-all-featured-768x461.jpg",
+				"width": 768,
+				"height": 461,
+				"mime_type": "image/jpeg",
+				"source_url": "https://victorzambrano.com/wp-content/uploads/2017/05/00-cloudmondo-all-featured-768x461.jpg"
+			},
+			"large": {
+				"file": "00-cloudmondo-all-featured-1024x614.jpg",
+				"width": 1024,
+				"height": 614,
+				"mime_type": "image/jpeg",
+				"source_url": "https://victorzambrano.com/wp-content/uploads/2017/05/00-cloudmondo-all-featured-1024x614.jpg"
+			},
+			"post-thumbnail": {
+				"file": "00-cloudmondo-all-featured-284x150.jpg",
+				"width": 284,
+				"height": 150,
+				"mime_type": "image/jpeg",
+				"source_url": "https://victorzambrano.com/wp-content/uploads/2017/05/00-cloudmondo-all-featured-284x150.jpg"
+			},
+			"gallery_small": {
+				"file": "00-cloudmondo-all-featured-380x228.jpg",
+				"width": 380,
+				"height": 228,
+				"mime_type": "image/jpeg",
+				"source_url": "https://victorzambrano.com/wp-content/uploads/2017/05/00-cloudmondo-all-featured-380x228.jpg"
+			},
+			"feature_image": {
+				"file": "00-cloudmondo-all-featured-1400x900.jpg",
+				"width": 1400,
+				"height": 900,
+				"mime_type": "image/jpeg",
+				"source_url": "https://victorzambrano.com/wp-content/uploads/2017/05/00-cloudmondo-all-featured-1400x900.jpg"
+			},
+			"icon_size": {
+				"file": "00-cloudmondo-all-featured-40x40.jpg",
+				"width": 40,
+				"height": 40,
+				"mime_type": "image/jpeg",
+				"source_url": "https://victorzambrano.com/wp-content/uploads/2017/05/00-cloudmondo-all-featured-40x40.jpg"
+			},
+			"jetpack-portfolio-admin-thumb": {
+				"file": "00-cloudmondo-all-featured-50x50.jpg",
+				"width": 50,
+				"height": 50,
+				"mime_type": "image/jpeg",
+				"source_url": "https://victorzambrano.com/wp-content/uploads/2017/05/00-cloudmondo-all-featured-50x50.jpg"
+			},
+			"full": {
+				"file": "00-cloudmondo-all-featured.jpg",
+				"width": 2500,
+				"height": 1500,
+				"mime_type": "image/jpeg",
+				"source_url": "https://victorzambrano.com/wp-content/uploads/2017/05/00-cloudmondo-all-featured.jpg"
+			}
+		},
+		"image_meta": {
+			"aperture": "0",
+			"credit": "",
+			"camera": "",
+			"caption": "",
+			"created_timestamp": "0",
+			"copyright": "",
+			"focal_length": "0",
+			"iso": "0",
+			"shutter_speed": "0",
+			"title": "",
+			"orientation": "0",
+			"keywords": [
+
+			]
+		}
+	},
+	"post": null,
+	"source_url": "https://victorzambrano.com/wp-content/uploads/2017/05/00-cloudmondo-all-featured.jpg",
+	"_links": {
+		"self": [
+			{
+				"href": "https://victorzambrano.com/wp-json/wp/v2/media/2298"
+			}
+		],
+		"collection": [
+			{
+				"href": "https://victorzambrano.com/wp-json/wp/v2/media"
+			}
+		],
+		"about": [
+			{
+				"href": "https://victorzambrano.com/wp-json/wp/v2/types/attachment"
+			}
+		],
+		"author": [
+			{
+				"embeddable": true,
+				"href": "https://victorzambrano.com/wp-json/wp/v2/users/2"
+			}
+		],
+		"replies": [
+			{
+				"embeddable": true,
+				"href": "https://victorzambrano.com/wp-json/wp/v2/comments?post=2298"
+			}
+		]
+	}
+}
