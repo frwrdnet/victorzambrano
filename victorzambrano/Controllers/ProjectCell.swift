@@ -11,4 +11,5 @@ import UIKit
 class ProjectCell : UICollectionViewCell {
 	@IBOutlet weak var projectThumbImage: UIImageView!
 	@IBOutlet weak var projectThumbTitle: UILabel!
+	@IBOutlet weak var projectThumbData: UILabel!
 }
