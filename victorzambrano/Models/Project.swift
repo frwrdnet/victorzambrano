@@ -22,4 +22,5 @@ class Project: Object {
 	
 	// child relationship
 	var projectImages = List<ProjectImage>()
+	var featuredImage = List<ProjectImage>()
 }
