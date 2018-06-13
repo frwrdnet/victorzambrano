@@ -133,15 +133,15 @@ class PortfolioViewController: UICollectionViewController, UICollectionViewDeleg
 		
 		}
 		
-		//cell.contentView.isHidden = false;
-		//cell.contentView.alpha = 0
-		
-		//if projectsLoaded {
-			//cell.contentView.isHidden = true;
-			//UIView.animate(withDuration: 1.3, animations: {
-				//cell.contentView.alpha = 1.0
-			//})
-		//}
+//		cell.contentView.isHidden = true;
+//		cell.contentView.alpha = 0
+//
+//		if projectsLoaded {
+//			cell.contentView.isHidden = false;
+//			UIView.animate(withDuration: 0.6, animations: {
+//				cell.contentView.alpha = 1.0
+//			})
+//		}
 		
 		// Configure the cell
 		return cell
@@ -165,13 +165,18 @@ class PortfolioViewController: UICollectionViewController, UICollectionViewDeleg
 		}
 	}
 	
-//	override func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-//		if projectsLoaded {
-//			UIView.animate(withDuration: 0.8, animations: {
-//				cell.contentView.alpha = 1.0
-//			})
-//		}
-//	}
+	override func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+		
+		cell.contentView.isHidden = true;
+		cell.contentView.alpha = 0
+		
+		if projectsLoaded {
+			cell.contentView.isHidden = false;
+			UIView.animate(withDuration: 0.6, animations: {
+				cell.contentView.alpha = 1.0
+			})
+		}
+	}
 
 	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
 			
