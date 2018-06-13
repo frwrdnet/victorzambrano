@@ -10,6 +10,5 @@ target 'victorzambrano' do
 	pod 'SwiftyJSON'
 	pod 'RealmSwift'
 	pod 'moa' #, '~> 9.0'
-	#pod 'Ripper', '~> 0.8' ## Rubbish
-	#pod 'UIImageViewNetwork' ## Rubbish
+	pod 'Auk' #, '~> 8.0'
 end

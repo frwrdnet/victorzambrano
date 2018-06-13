@@ -1,5 +1,5 @@
 //
-//  CollectionViewController.swift
+//  PortfolioViewController.swift
 //  victorzambrano
 //
 //  Created by Victor Zambrano on 6/4/18.
@@ -12,7 +12,7 @@ import SwiftyJSON
 import RealmSwift
 import moa
 
-class CollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
+class PortfolioViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
 	
 	let realm = try! Realm()
 	
@@ -70,26 +70,6 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
 	override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
 		print("collectionView - numberOfItemsInSection: \(String(describing: projects?.count ?? 1))")
 		return projects?.count ?? 1
-	}
-	
-	@IBDesignable class TopAlignedLabel: UILabel {
-		override func drawText(in rect: CGRect) {
-			if let stringText = text {
-				let stringTextAsNSString = stringText as NSString
-				let labelStringSize = stringTextAsNSString.boundingRect(with: CGSize(width: self.frame.width,height: CGFloat.greatestFiniteMagnitude),
-																		options: NSStringDrawingOptions.usesLineFragmentOrigin,
-																		attributes: [kCTFontAttributeName as NSAttributedStringKey: font],
-																		context: nil).size
-				super.drawText(in: CGRect(x:0,y: 0,width: self.frame.width, height:ceil(labelStringSize.height)))
-			} else {
-				super.drawText(in: rect)
-			}
-		}
-		override func prepareForInterfaceBuilder() {
-			super.prepareForInterfaceBuilder()
-			layer.borderWidth = 1
-			layer.borderColor = UIColor.black.cgColor
-		}
 	}
 	
 	override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -168,6 +148,23 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
 		
 	}
 	
+	override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+		if let cell = collectionView.cellForItem(at: indexPath) {
+			print("collectionView - didSelectItemAt:")
+			// user tapped on cell
+			performSegue(withIdentifier: "openProject", sender: self)
+		}
+	}
+	
+	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+		
+		let destinationVC = segue.destination as! ProjectViewController
+		
+		if let indexPath = collectionView?.indexPathsForSelectedItems {
+			destinationVC.selectedProject = projects?[(indexPath.first?.item)!]
+		}
+	}
+	
 //	override func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
 //		if projectsLoaded {
 //			UIView.animate(withDuration: 0.8, animations: {
@@ -177,13 +174,6 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
 //	}
 
 	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-
-//		let paddingSpace = sectionInsets.left * (itemsPerRow + 1)
-//		let availableWidth = view.frame.width - paddingSpace
-//		widthPerItem = availableWidth / itemsPerRow
-//
-//		let availableHeight = view.frame.height - paddingSpace
-//		heightPerItem = availableHeight / itemsPerColumn
 			
 		// Set cell width to 100%
 		let widthPerItem = collectionView.bounds.size.width - sectionInsets.left - sectionInsets.right // CGFloat(150.0)
@@ -218,8 +208,6 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
 
 		print("Getting project data...")
 		getProjectData(url: postURL, parameters: ["":""])
-		
-		//print("Projects: \(String(describing: projects))\n----")
 		
 	}
 
@@ -263,7 +251,7 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
 
 				} else {
 					print("Error: \(String(describing: response.result.error))")
-					//self.bitcoinPriceLabel.text = "Connection Issues"
+					//self.portfolioView.projectThumbTitle.text = "Connection Issues..."
 				}
 		}
 
@@ -284,7 +272,7 @@ class CollectionViewController: UICollectionViewController, UICollectionViewDele
 					
 				} else {
 					print("Error: \(String(describing: response.result.error))")
-					//self.bitcoinPriceLabel.text = "Connection Issues"
+					//self.projectThumbTitle.text = "Connection Issues..."
 				}
 		}
 		
@@ -937,7 +925,7 @@ private extension String {
 }
 
 // MARK: - Private
-private extension CollectionViewController {
+private extension PortfolioViewController {
 	func projectForIndexPath(_ indexPath: IndexPath) -> Project {
 		return projects![indexPath.item]
 	}

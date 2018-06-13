@@ -1,5 +1,7 @@
 PODS:
   - Alamofire (4.7.2)
+  - Auk (8.0.2):
+    - moa
   - moa (9.0.2)
   - Realm (3.7.1):
     - Realm/Headers (= 3.7.1)
@@ -10,6 +12,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - Auk
   - moa
   - RealmSwift
   - SwiftyJSON
@@ -17,6 +20,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - Auk
     - moa
     - Realm
     - RealmSwift
@@ -24,11 +28,12 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  Auk: 82be62a2cf650437fe745c81b12ac2440a0f682c
   moa: b73dc5e0efa1fad00711c4608e41b197f4d15b12
   Realm: 906be37d52f17f25484ac01643a7f26a9d3bfbd5
   RealmSwift: 1c2b6bae3dc55bb87e080ffa96537d71442f6dce
   SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
 
-PODFILE CHECKSUM: 303a9846a3a16ade767e0410aad1ca8279a09e84
+PODFILE CHECKSUM: 8ce8ac16b1a771709f03232bf1375efde0aa25e7
 
 COCOAPODS: 1.5.3
