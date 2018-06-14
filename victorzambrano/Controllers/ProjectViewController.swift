@@ -13,7 +13,7 @@ import RealmSwift
 import moa
 import Auk
 
-class ProjectViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UIScrollViewDelegate {
+class ProjectViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UIScrollViewDelegate, UITableViewDataSource, UITableViewDelegate {
 	
 	//let realm = try! Realm()
 	
@@ -21,15 +21,21 @@ class ProjectViewController: UIViewController, UICollectionViewDelegate, UIColle
 	//var projectsLoaded = false
 	
 	var selectedProject: Project?
+	var selectedImage: ProjectImage?
 	
 	let reuseIdentifier = "pictureCell"
 	let sectionInsets = UIEdgeInsets(top: 0.0, left: 0.0, bottom: 20.0, right: 0.0)
+	let tableRowHeight = 340.0
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		// Do any additional setup after loading the view, typically from a nib.
 		
+		imageTableView.rowHeight = CGFloat(tableRowHeight)
+		
 		showProject()
+		
+		imageTableView.reloadData()
 	}
 	
 	override func viewWillAppear(_ animated: Bool) {
@@ -37,14 +43,19 @@ class ProjectViewController: UIViewController, UICollectionViewDelegate, UIColle
 		if (navigationController?.navigationBar) != nil {
 			//navBar.barTintColor = UIColor.lightGray
 			
-			title = selectedProject?.projectTitle ?? "Project"
+			//title = selectedProject?.projectTitle ?? "Project"
+			title = "Project"
+			
+			//imageTableView.reloadData()
 		}
 	}
-
+	
 	@IBOutlet weak var projectPageTitle: UILabel!
 	@IBOutlet weak var projectPageData: UILabel!
 	@IBOutlet weak var projectPageDescription: UITextView!
-	@IBOutlet weak var projectPageScroller: UIScrollView!
+	//@IBOutlet weak var projectPageScroller: UIScrollView!
+	@IBOutlet weak var imageTableView: UITableView!
+	
 	
 	@IBAction func imageTapped(_ sender: UITapGestureRecognizer) {
 		performSegue(withIdentifier: "openImageViewer", sender: self)
@@ -52,9 +63,9 @@ class ProjectViewController: UIViewController, UICollectionViewDelegate, UIColle
 	
 	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 		let destinationVC = segue.destination as! ImageViewerViewController
-		
-		if let indexPath = projectPageScroller.auk.currentPageIndex {
-			destinationVC.selectedImage = selectedProject?.projectImages[indexPath]
+
+		if let viewImage = selectedImage {
+			destinationVC.selectedImage = viewImage
 		}
 	}
 	
@@ -65,24 +76,43 @@ class ProjectViewController: UIViewController, UICollectionViewDelegate, UIColle
 	func showProject() {
 		// show project data model
 		
-		projectPageScroller.auk.settings.preloadRemoteImagesAround = 1
+		//projectPageScroller.auk.settings.preloadRemoteImagesAround = 1
 		
 		projectPageTitle.text = selectedProject?.projectTitle ?? "Project Title"
 		projectPageData.text = selectedProject?.projectDate ?? "Project Date"
 		projectPageDescription.text = selectedProject?.projectExcerpt ?? "Project Excerpt"
 		
-		/*
-		Here is what you need to do to add an image tap handler to the scroll view.
-		• In the Storyboard drag a Tap Gesture Recognizer into your scroll view.
-		• Show assistant editor with your view controller code.
-		• Do the control-drag from the tap gesture recognizer in the storyboard into your view controller code.
-		• A dialog will appear, change the Connection to action and enter the name of the method.
-		•  This method will be called when the scroll view is tapped. Use the auk.currentPageIndex property of your scroll view to get the index of the current page.
-		*/
-		if let images = selectedProject?.projectImages {
-			for image in images {
-				projectPageScroller.auk.show(url: image.imageLargeURL!, accessibilityLabel: image.title)
-			}
-		}
+//		if let images = selectedProject?.projectImages {
+//			for image in images {
+				//projectPageScroller.auk.show(url: image.imageLargeURL!, accessibilityLabel: image.title)
+//			}
+//		}
+		
+	}
+	
+	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+		print("numberOfRowsInSection")
+		return selectedProject?.projectImages.count ?? 1
+	}
+	
+	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+		
+		let cell = tableView.dequeueReusableCell(withIdentifier: "imageCell") as! ImageCell
+		
+		cell.imageCellTitle.text = selectedProject?.projectImages[indexPath.row].title ?? "Image Name"
+		
+		cell.imageCellImage?.image = UIImage(named: "placeholder-thumbnail-fullwidth")
+		cell.imageCellImage?.moa.url = selectedProject?.projectImages[indexPath.row].imageLargeURL
+		
+		return cell
+	}
+	
+	func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+		print("willDisplay: \(indexPath.row)")
+	}
+	
+	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+		selectedImage = selectedProject?.projectImages[indexPath.row]
+		performSegue(withIdentifier: "openImageViewer", sender: self)
 	}
 }

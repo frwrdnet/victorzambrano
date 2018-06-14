@@ -17,6 +17,7 @@
 		577E920620C6604000008CE0 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577E920520C6604000008CE0 /* Project.swift */; };
 		5796281620D0DD540053B33B /* ImageViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5796281520D0DD540053B33B /* ImageViewerViewController.swift */; };
 		579AE41520D0C0A100C2A5AA /* ProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579AE41420D0C0A100C2A5AA /* ProjectViewController.swift */; };
+		57EB034420D211EE00268B71 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EB034320D211EE00268B71 /* ImageCell.swift */; };
 		CF94850C8DD1921D33324B87 /* Pods_victorzambrano.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA7DF7D565FCBBD3F3DC4484 /* Pods_victorzambrano.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +35,7 @@
 		577E920520C6604000008CE0 /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
 		5796281520D0DD540053B33B /* ImageViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewerViewController.swift; sourceTree = "<group>"; };
 		579AE41420D0C0A100C2A5AA /* ProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectViewController.swift; sourceTree = "<group>"; };
+		57EB034320D211EE00268B71 /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
 		679955D3C4277EE8A80A8F1F /* Pods-victorzambrano.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-victorzambrano.debug.xcconfig"; path = "Pods/Target Support Files/Pods-victorzambrano/Pods-victorzambrano.debug.xcconfig"; sourceTree = "<group>"; };
 		AA7DF7D565FCBBD3F3DC4484 /* Pods_victorzambrano.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_victorzambrano.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -106,6 +108,7 @@
 				579AE41420D0C0A100C2A5AA /* ProjectViewController.swift */,
 				5796281520D0DD540053B33B /* ImageViewerViewController.swift */,
 				5729981720CBB02B0018B356 /* ProjectCell.swift */,
+				57EB034320D211EE00268B71 /* ImageCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 				5796281620D0DD540053B33B /* ImageViewerViewController.swift in Sources */,
 				579AE41520D0C0A100C2A5AA /* ProjectViewController.swift in Sources */,
 				5737FBE520CBBB26003153DA /* ProjectImage.swift in Sources */,
+				57EB034420D211EE00268B71 /* ImageCell.swift in Sources */,
 				5729981820CBB02B0018B356 /* ProjectCell.swift in Sources */,
 				577E920620C6604000008CE0 /* Project.swift in Sources */,
 			);
