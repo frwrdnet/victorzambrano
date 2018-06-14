@@ -45,7 +45,7 @@ class PortfolioViewController: UICollectionViewController, UICollectionViewDeleg
 	var postURL = ""
 	
 	let reuseIdentifier = "projectCell"
-	let sectionInsets = UIEdgeInsets(top: 0.0, left: 0.0, bottom: 20.0, right: 0.0)
+	let sectionInsets = UIEdgeInsets(top: 40.0, left: 0.0, bottom: 20.0, right: 0.0)
 	let itemsPerRow: CGFloat = 1
 	let itemsPerColumn: CGFloat = 6
 
