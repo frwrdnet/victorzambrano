@@ -31,7 +31,10 @@ class ProjectViewController: UIViewController, UICollectionViewDelegate, UIColle
 		super.viewDidLoad()
 		// Do any additional setup after loading the view, typically from a nib.
 		
-		imageTableView.rowHeight = CGFloat(tableRowHeight)
+		//imageTableView.rowHeight = CGFloat(tableRowHeight)
+		imageTableView.estimatedRowHeight = 50.0
+		imageTableView.rowHeight = UITableViewAutomaticDimension
+		imageTableView.separatorColor = UIColor.clear
 		
 		showProject()
 		
@@ -41,19 +44,15 @@ class ProjectViewController: UIViewController, UICollectionViewDelegate, UIColle
 	override func viewWillAppear(_ animated: Bool) {
 		// what to do exactly when the view is about to be shown
 		if (navigationController?.navigationBar) != nil {
-			//navBar.barTintColor = UIColor.lightGray
 			
 			//title = selectedProject?.projectTitle ?? "Project"
 			title = "Project"
-			
-			//imageTableView.reloadData()
 		}
 	}
 	
 	@IBOutlet weak var projectPageTitle: UILabel!
 	@IBOutlet weak var projectPageData: UILabel!
 	@IBOutlet weak var projectPageDescription: UITextView!
-	//@IBOutlet weak var projectPageScroller: UIScrollView!
 	@IBOutlet weak var imageTableView: UITableView!
 	
 	
@@ -76,17 +75,9 @@ class ProjectViewController: UIViewController, UICollectionViewDelegate, UIColle
 	func showProject() {
 		// show project data model
 		
-		//projectPageScroller.auk.settings.preloadRemoteImagesAround = 1
-		
 		projectPageTitle.text = selectedProject?.projectTitle ?? "Project Title"
 		projectPageData.text = selectedProject?.projectDate ?? "Project Date"
 		projectPageDescription.text = selectedProject?.projectExcerpt ?? "Project Excerpt"
-		
-//		if let images = selectedProject?.projectImages {
-//			for image in images {
-				//projectPageScroller.auk.show(url: image.imageLargeURL!, accessibilityLabel: image.title)
-//			}
-//		}
 		
 	}
 	
@@ -99,10 +90,19 @@ class ProjectViewController: UIViewController, UICollectionViewDelegate, UIColle
 		
 		let cell = tableView.dequeueReusableCell(withIdentifier: "imageCell") as! ImageCell
 		
-		cell.imageCellTitle.text = selectedProject?.projectImages[indexPath.row].title ?? "Image Name"
+		cell.imageCellTitle.text = "" //selectedProject?.projectImages[indexPath.row].title ?? "Image Name"
 		
 		cell.imageCellImage?.image = UIImage(named: "placeholder-thumbnail-fullwidth")
 		cell.imageCellImage?.moa.url = selectedProject?.projectImages[indexPath.row].imageLargeURL
+		
+		// resize image to fit cell
+		let imageWidth = CGFloat(truncating: NumberFormatter().number(from: (selectedProject?.projectImages[indexPath.row].imageLargeWidth)!)!)
+		let imageHeight = CGFloat(truncating: NumberFormatter().number(from: (selectedProject?.projectImages[indexPath.row].imageLargeHeight)!)!)
+
+		let widthPerItem = CGFloat(imageTableView.bounds.size.width)
+		let heightPerItem = (widthPerItem * imageHeight) / imageWidth
+	
+		cell.imageCellImage.sizeThatFits(CGSize(width: widthPerItem, height: heightPerItem))
 		
 		return cell
 	}
