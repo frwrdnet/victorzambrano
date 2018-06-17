@@ -390,6 +390,11 @@ class PortfolioViewController: UICollectionViewController, UICollectionViewDeleg
 				projectImage["imageLargeWidth"] = image["media_details"]["sizes"]["large"]["width"].stringValue
 				projectImage["imageLargeHeight"] = image["media_details"]["sizes"]["large"]["height"].stringValue
 				projectImage["imageLargeMimeType"] = image["media_details"]["sizes"]["large"]["mime_type"].stringValue
+				
+				projectImage["imageProjectURL"] = cleanUpURL(url: image["media_details"]["sizes"]["project_image"]["source_url"].stringValue)
+				projectImage["imageProjectWidth"] = image["media_details"]["sizes"]["project_image"]["width"].stringValue // 480px
+				projectImage["imageProjectHeight"] = image["media_details"]["sizes"]["project_image"]["height"].stringValue // 240px
+				projectImage["imageProjectMimeType"] = image["media_details"]["sizes"]["project_image"]["mime_type"].stringValue
 			
 				projectImage["imageFeatureURL"] = cleanUpURL(url: image["media_details"]["sizes"]["feature_image"]["source_url"].stringValue)
 				projectImage["imageFeatureWidth"] = image["media_details"]["sizes"]["feature_image"]["width"].stringValue
@@ -435,6 +440,22 @@ class PortfolioViewController: UICollectionViewController, UICollectionViewDeleg
 			
 			//print("\(image)\n---")
 			
+			/*
+			Image sizes:
+			feature_image: 		1378x900,
+			???					150x150,
+			???					218x300,
+			post_thumbnail: 	284x150,
+			gallery_small: 		380x523,
+			icon_size: 			40x40,
+			project_image: 		480x240,
+			???					50x50,
+			gallery_medium: 	620x854,
+			???					743x1024,
+			???					768x1058,
+			gallery: 			960x1322
+			*/
+			
 			featuredImage["url"] = cleanUpURL(url: image["guid"]["rendered"].stringValue)
 			featuredImage["link"] = cleanUpURL(url: image["link"].stringValue)
 			featuredImage["title"] = image["title"]["rendered"].stringValue
@@ -459,6 +480,11 @@ class PortfolioViewController: UICollectionViewController, UICollectionViewDeleg
 			featuredImage["imageLargeWidth"] = image["media_details"]["sizes"]["large"]["width"].stringValue
 			featuredImage["imageLargeHeight"] = image["media_details"]["sizes"]["large"]["height"].stringValue
 			featuredImage["imageLargeMimeType"] = image["media_details"]["sizes"]["large"]["mime_type"].stringValue
+			
+			featuredImage["imageProjectURL"] = cleanUpURL(url: image["media_details"]["sizes"]["project_image"]["source_url"].stringValue)
+			featuredImage["imageProjectWidth"] = image["media_details"]["sizes"]["project_image"]["width"].stringValue // 480px
+			featuredImage["imageProjectHeight"] = image["media_details"]["sizes"]["project_image"]["height"].stringValue // 240px
+			featuredImage["imageProjectMimeType"] = image["media_details"]["sizes"]["project_image"]["mime_type"].stringValue
 			
 			featuredImage["imageFeatureURL"] = cleanUpURL(url: image["media_details"]["sizes"]["feature_image"]["source_url"].stringValue)
 			featuredImage["imageFeatureWidth"] = image["media_details"]["sizes"]["feature_image"]["width"].stringValue

@@ -37,6 +37,11 @@ class ProjectImage: Object {
 	@objc dynamic var imageLargeHeight: String?
 	@objc dynamic var imageLargeMimeType: String?
 	
+	@objc dynamic var imageProjectURL: String?
+	@objc dynamic var imageProjectWidth: String?
+	@objc dynamic var imageProjectHeight: String?
+	@objc dynamic var imageProjectMimeType: String?
+	
 	@objc dynamic var imageFeatureURL: String?
 	@objc dynamic var imageFeatureWidth: String?
 	@objc dynamic var imageFeatureHeight: String?

@@ -31,10 +31,10 @@ class ProjectViewController: UIViewController, UICollectionViewDelegate, UIColle
 		super.viewDidLoad()
 		// Do any additional setup after loading the view, typically from a nib.
 		
-		//imageTableView.rowHeight = CGFloat(tableRowHeight)
-		imageTableView.estimatedRowHeight = 50.0
-		imageTableView.rowHeight = UITableViewAutomaticDimension
-		imageTableView.separatorColor = UIColor.clear
+		imageTableView.rowHeight = CGFloat(81.0)
+		//imageTableView.estimatedRowHeight = 50.0
+		//imageTableView.rowHeight = UITableViewAutomaticDimension
+		//imageTableView.separatorColor = UIColor.clear
 		
 		showProject()
 		
@@ -90,19 +90,46 @@ class ProjectViewController: UIViewController, UICollectionViewDelegate, UIColle
 		
 		let cell = tableView.dequeueReusableCell(withIdentifier: "imageCell") as! ImageCell
 		
-		cell.imageCellTitle.text = "" //selectedProject?.projectImages[indexPath.row].title ?? "Image Name"
-		
+		// load placeholder image
 		cell.imageCellImage?.image = UIImage(named: "placeholder-thumbnail-fullwidth")
-		cell.imageCellImage?.moa.url = selectedProject?.projectImages[indexPath.row].imageLargeURL
 		
-		// resize image to fit cell
-		let imageWidth = CGFloat(truncating: NumberFormatter().number(from: (selectedProject?.projectImages[indexPath.row].imageLargeWidth)!)!)
-		let imageHeight = CGFloat(truncating: NumberFormatter().number(from: (selectedProject?.projectImages[indexPath.row].imageLargeHeight)!)!)
-
-		let widthPerItem = CGFloat(imageTableView.bounds.size.width)
-		let heightPerItem = (widthPerItem * imageHeight) / imageWidth
-	
-		cell.imageCellImage.sizeThatFits(CGSize(width: widthPerItem, height: heightPerItem))
+		// load image title
+		cell.imageCellTitle.text = selectedProject?.projectImages[indexPath.row].title ?? "Image Name"
+		
+		// set image let
+		let image = selectedProject?.projectImages[indexPath.row]
+		
+		// if image
+		if image?.imageProjectURL != "" {
+			
+			// load image (async)
+			cell.imageCellImage?.moa.url = image?.imageProjectURL
+			
+			// resize image to fit cell
+//			if image?.imageProjectWidth != "" {
+//				if image?.imageProjectHeight != "" {
+//
+//					let imageWidth = CGFloat(truncating: NumberFormatter().number(from: (image?.imageProjectWidth)!)!)
+//					let imageHeight = CGFloat(truncating: NumberFormatter().number(from: (image?.imageProjectHeight)!)!)
+//
+//					let widthPerItem = CGFloat(imageTableView.bounds.size.width)
+//					let heightPerItem = (widthPerItem * imageHeight) / imageWidth
+//
+//					//cell.imageCellImage.sizeThatFits(CGSize(width: widthPerItem, height: heightPerItem))
+//
+//				}
+//			}
+			
+		} else {
+			
+			cell.imageCellImage?.image = UIImage(named: "placeholder-thumbnail-fullwidth")
+			
+			//cell.imageCellImage.sizeThatFits(CGSize(width: 480.0, height: 240.0))
+			
+		}
+		
+		// resize project image to its orig size
+		//cell.imageCellImage.sizeThatFits(CGSize(width: 480.0, height: 240.0))
 		
 		return cell
 	}
