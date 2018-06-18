@@ -86,40 +86,36 @@ class PortfolioViewController: UICollectionViewController, UICollectionViewDeleg
 				print("----\n\(indexPath.item): Project title: \(project.projectTitle) - id: \(project.projectID) - images: \(project.projectImages.count)")
 			
 				cell.projectThumbTitle.text = project.projectTitle
-				cell.projectThumbData.text = project.projectDate //project.projectExcerpt
+				cell.projectThumbData.text = formatDate(date: project.projectDate) //project.projectExcerpt
 			
 				var imageWidth = CGFloat(375.0)
 				var imageHeight = CGFloat(225.0)
 			
-				cell.projectThumbImage.moa.errorImage = UIImage(named: "placeholder-thumbnail-fullwidth-150x15")
-				cell.projectThumbImage.image = UIImage(named: "placeholder-thumbnail-fullwidth-150x150")
-			
-				//if project.projectImages.count > 0 {
+				cell.projectThumbImage.moa.errorImage = UIImage(named: "placeholder-thumbnail-fullwidth")
+				cell.projectThumbImage.image = UIImage(named: "placeholder-thumbnail-fullwidth")
 				
-					if let test0 = project.featuredImage.first?.imageLargeWidth {
-						print("project.featuredImage.imageFullURL: \(String(describing: project.featuredImage.first?.imageLargeURL))")
+				if (project.featuredImage.first?.imageLargeWidth) != nil {
+					print("project.featuredImage.imageFullURL: \(String(describing: project.featuredImage.first?.imageLargeURL))")
 
-						cell.projectThumbImage.moa.url = project.featuredImage.first?.imageLargeURL
+					cell.projectThumbImage.moa.url = project.featuredImage.first?.imageLargeURL
 
-						imageWidth = CGFloat(truncating: NumberFormatter().number(from: (project.featuredImage.first?.imageLargeWidth)!)!)
-						imageHeight = CGFloat(truncating: NumberFormatter().number(from: (project.featuredImage.first?.imageLargeHeight)!)!)
+					imageWidth = CGFloat(truncating: NumberFormatter().number(from: (project.featuredImage.first?.imageLargeWidth)!)!)
+					imageHeight = CGFloat(truncating: NumberFormatter().number(from: (project.featuredImage.first?.imageLargeHeight)!)!)
 
-					} else if let test1 = project.projectImages.first?.imageWidth {
-						print("project.projectImages.first?.url: \(String(describing: project.projectImages.first?.url))")
+				} else if (project.projectImages.first?.imageWidth) != nil {
+					print("project.projectImages.first?.url: \(String(describing: project.projectImages.first?.url))")
 
-						cell.projectThumbImage.moa.url = project.projectImages.first?.url
+					cell.projectThumbImage.moa.url = project.projectImages.first?.url
 
-						imageWidth = CGFloat(truncating: NumberFormatter().number(from: (project.projectImages.first?.imageWidth)!)!)
-						imageHeight = CGFloat(truncating: NumberFormatter().number(from: (project.projectImages.first?.imageHeight)!)!)
+					imageWidth = CGFloat(truncating: NumberFormatter().number(from: (project.projectImages.first?.imageWidth)!)!)
+					imageHeight = CGFloat(truncating: NumberFormatter().number(from: (project.projectImages.first?.imageHeight)!)!)
 
-					} else {
-						print("generic image.")
-						imageWidth = CGFloat(collectionView.bounds.size.width) - sectionInsets.left - sectionInsets.right
-						imageHeight = CGFloat((imageWidth * 3) / 4)
+				} else {
+					print("generic image.")
+					imageWidth = CGFloat(collectionView.bounds.size.width) - sectionInsets.left - sectionInsets.right
+					imageHeight = CGFloat((imageWidth * 3) / 4)
 
-					}
-				
-				//}
+				}
 			
 				let containerWidth = CGFloat(collectionView.bounds.size.width)
 				let widthPerItem = containerWidth - sectionInsets.left - sectionInsets.right
@@ -133,23 +129,13 @@ class PortfolioViewController: UICollectionViewController, UICollectionViewDeleg
 		
 		}
 		
-//		cell.contentView.isHidden = true;
-//		cell.contentView.alpha = 0
-//
-//		if projectsLoaded {
-//			cell.contentView.isHidden = false;
-//			UIView.animate(withDuration: 0.6, animations: {
-//				cell.contentView.alpha = 1.0
-//			})
-//		}
-		
 		// Configure the cell
 		return cell
 		
 	}
 	
 	override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-		if let cell = collectionView.cellForItem(at: indexPath) {
+		if collectionView.cellForItem(at: indexPath) != nil {
 			print("collectionView - didSelectItemAt:")
 			// user tapped on cell
 			performSegue(withIdentifier: "openProject", sender: self)
@@ -547,12 +533,36 @@ class PortfolioViewController: UICollectionViewController, UICollectionViewDeleg
 	
 }
 
-func cleanUpURL(url: String) -> String {
-	var replaceURL:String = url
-	replaceURL = replaceURL.replacingOccurrences(of: "http://", with: "https://")
-	replaceURL = replaceURL.replacingOccurrences(of: "frwrdnet.webfactional.com", with: "victorzambrano.com")
-	replaceURL = replaceURL.replacingOccurrences(of: "frwrd.net", with: "victorzambrano.com")
-	return replaceURL
+extension UIViewController {
+
+	// HELPER FUNCTIONS
+	
+	// format date as "October 2018"
+	public func formatDate(date: String) -> String {
+		let dateFormatter = DateFormatter()
+		let tempLocale = dateFormatter.locale // save locale temporarily
+		dateFormatter.locale = Locale(identifier: "en_US_POSIX") // set locale to reliable US_POSIX
+		dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss"
+		let formattedDate = dateFormatter.date(from: date)!
+		//dateFormatter.dateStyle = DateFormatter.Style.medium
+		//dateFormatter.timeStyle = DateFormatter.Style.medium
+		dateFormatter.dateFormat = "MMMM y" //"dd-MM-yyyy HH:mm:ss"
+		dateFormatter.locale = tempLocale // reset the locale
+		let dateString = dateFormatter.string(from: formattedDate)
+		print("exact: date : \(dateString)")
+		
+		return dateString
+	}
+	
+	// Clean up URL
+	public func cleanUpURL(url: String) -> String {
+		var replaceURL:String = url
+		replaceURL = replaceURL.replacingOccurrences(of: "http://", with: "https://")
+		replaceURL = replaceURL.replacingOccurrences(of: "frwrdnet.webfactional.com", with: "victorzambrano.com")
+		replaceURL = replaceURL.replacingOccurrences(of: "frwrd.net", with: "victorzambrano.com")
+		return replaceURL
+	}
+	
 }
 
 // MARK: - Extensions

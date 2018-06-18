@@ -15,11 +15,6 @@ import Auk
 
 class ProjectViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UIScrollViewDelegate, UITableViewDataSource, UITableViewDelegate {
 	
-	//let realm = try! Realm()
-	
-	//var projects: Results<Project>?
-	//var projectsLoaded = false
-	
 	var selectedProject: Project?
 	var selectedImage: ProjectImage?
 	
@@ -73,11 +68,19 @@ class ProjectViewController: UIViewController, UICollectionViewDelegate, UIColle
 	}
 	
 	func showProject() {
-		// show project data model
 		
-		projectPageTitle.text = selectedProject?.projectTitle ?? "Project Title"
-		projectPageData.text = selectedProject?.projectDate ?? "Project Date"
-		projectPageDescription.text = selectedProject?.projectExcerpt ?? "Project Excerpt"
+		// show project data model
+		let title = selectedProject?.projectTitle ?? "Project Title"
+		let date = selectedProject?.projectDate ?? "Project Date"
+		let desc = selectedProject?.projectExcerpt ?? "Project Excerpt"
+		
+		print("title: \(title)")
+		print("date: \(date)")
+		print("desc: \(desc)")
+		
+		projectPageTitle.text = title
+		projectPageData.text = formatDate(date: date)
+		projectPageDescription.text = desc
 		
 	}
 	
@@ -103,28 +106,12 @@ class ProjectViewController: UIViewController, UICollectionViewDelegate, UIColle
 		if image?.imageProjectURL != "" {
 			
 			// load image (async)
+			cell.imageCellImage?.moa.errorImage = UIImage(named: "placeholder-thumbnail-fullwidth")
 			cell.imageCellImage?.moa.url = image?.imageProjectURL
-			
-			// resize image to fit cell
-//			if image?.imageProjectWidth != "" {
-//				if image?.imageProjectHeight != "" {
-//
-//					let imageWidth = CGFloat(truncating: NumberFormatter().number(from: (image?.imageProjectWidth)!)!)
-//					let imageHeight = CGFloat(truncating: NumberFormatter().number(from: (image?.imageProjectHeight)!)!)
-//
-//					let widthPerItem = CGFloat(imageTableView.bounds.size.width)
-//					let heightPerItem = (widthPerItem * imageHeight) / imageWidth
-//
-//					//cell.imageCellImage.sizeThatFits(CGSize(width: widthPerItem, height: heightPerItem))
-//
-//				}
-//			}
 			
 		} else {
 			
 			cell.imageCellImage?.image = UIImage(named: "placeholder-thumbnail-fullwidth")
-			
-			//cell.imageCellImage.sizeThatFits(CGSize(width: 480.0, height: 240.0))
 			
 		}
 		

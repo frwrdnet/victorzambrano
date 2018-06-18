@@ -20,9 +20,9 @@ class ImageViewerViewController: UIViewController {
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		// Do any additional setup after loading the view, typically from a nib.
 		
 		showImage()
+		
 	}
 	
 	override func viewWillAppear(_ animated: Bool) {
@@ -36,21 +36,7 @@ class ImageViewerViewController: UIViewController {
 		if let t = selectedImage?.title {
 			viewerImageTitle.text = t
 		}
-		
-		if let w = selectedImage?.imageWidth {
-			if let h = selectedImage?.imageHeight {
-				viewerImage.moa.url = selectedImage?.imageFullURL
-				
-//				let imageWidth = CGFloat(truncating: NumberFormatter().number(from: (selectedImage?.imageWidth)!)!)
-//				let imageHeight = CGFloat(truncating: NumberFormatter().number(from: (selectedImage?.imageHeight)!)!)
-//				
-//				let widthPerItem = CGFloat(viewerImage.bounds.size.width)
-//				let heightPerItem = (widthPerItem * imageHeight) / imageWidth
-//				
-//				print("viewerImage: width: \(widthPerItem) height: \(heightPerItem)")
-//				
-//				viewerImage.sizeThatFits(CGSize(width: widthPerItem, height: heightPerItem))
-			}
-		}
+		viewerImage.moa.errorImage = UIImage(named: "placeholder-thumbnail-fullwidth")
+		viewerImage.moa.url = selectedImage?.imageFullURL
 	}
 }
